@@ -1,5 +1,6 @@
 html,
 body {
+    height: 100000px;
     padding: 0;
     margin: 0;
     background-color: #f5f5f5;
@@ -14,6 +15,52 @@ header {
     width: 100%;
     height: 100%;
 }
+
+/* 顶部搜索 */
+.Tmall-top-input {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #fe0c40;
+    z-index: 1000;
+}
+
+.Tmall-top-input .container {
+    position: relative;
+}
+
+.Tmall-top-input-left {
+    position: absolute;
+    left: 43px;
+    top: 6px;
+}
+
+.Tmall-top-input-right {
+    margin-left: 272px;
+    padding-top: 8px;
+}
+
+.Tmall-top-input-right input:nth-child(1) {
+    float: left;
+    width: 648px;
+    height: 30px;
+    padding: 5px 3px 5px 5px;
+    box-sizing: border-box;
+}
+
+.Tmall-top-input-right input:nth-child(2) {
+    float: left;
+    width: 120px;
+    height: 30px;
+    border: none;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fe0c40;
+}
+
 
 /* 天猫首部导航  */
 .Tmall-nav {
@@ -772,4 +819,129 @@ header {
 
 .Tmall-hide1 {
     display: none;
+}
+
+
+/* 第五行 品牌闪购  */
+.Tmall-brand {
+    width: 100%;
+    height: 370px;
+}
+
+.Tmall-brand .container {
+    height: 100%;
+}
+
+.Tmall-brand-left {
+    float: left;
+    width: 234px;
+    height: 100%;
+}
+
+.Tmall-brand-left-top,
+.Tmall-brand-center-top,
+.Tmall-brand-right-top {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.Tmall-brand-center {
+    float: left;
+    width: 485px;
+    height: 100%;
+}
+
+.Tmall-brand-right {
+    float: left;
+    width: 485px;
+    height: 100%;
+}
+
+.Tmall-brand-box {
+    margin-right: 13px;
+}
+
+.Tmall-brand-left-top a,
+.Tmall-brand-center-top a,
+.Tmall-brand-right-top a {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/tamll/tmall-5-000.png);
+    background-size: 18px 18px;
+}
+
+.Tmall-brand-left-top span:nth-child(1),
+.Tmall-brand-center-top span:nth-child(1),
+.Tmall-brand-right-top span:nth-child(1) {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.Tmall-brand-left-top span:nth-child(2),
+.Tmall-brand-center-top span:nth-child(2),
+.Tmall-brand-right-top span:nth-child(2) {
+    font-weight: 600;
+}
+
+.Tmall-brand-div {
+    float: right;
+    margin-right: 42px;
+    font-size: 16px;
+}
+
+.Tmall-brand-left-bottom {
+    width: 235px;
+    height: 314px;
+}
+
+.Tmall-brand-center-bottom,
+.Tmall-brand-right-bottom {
+    height: 314px;
+    width: 485px;
+}
+
+
+/*  第六行 品牌 */
+.Tmall-trademark {
+    width: 100%;
+    height: 327px;
+    margin-top: 10px;
+}
+
+.Tmall-trademark .container {
+    height: 327px;
+}
+
+.Tmall-trademark ul {
+    height: 327px;
+}
+
+.Tmall-trademark ul li {
+    position: relative;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background-color: #fff;
+    float: left;
+}
+
+.Tmall-trademark ul li a {
+    display: inline-block;
+    width: 122px;
+    height: 108px;
+}
+
+.Tmall-trademark li img {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 25%;
+    left: 11%;
 }

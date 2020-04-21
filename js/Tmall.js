@@ -137,4 +137,17 @@ $(function () {
         $(".Tmall-slideshow-hide-box").hide()
     })
 
+    // 经过第五行 品牌闪购 图片变淡
+    $(".Tmall-brand-bottom").hover(
+        function () {
+            console.log(123)
+            $(this).css("opacity", .7)
+        },
+        function () {
+            $(this).css("opacity", 1)
+        }
+    )
+
+
+
 })
