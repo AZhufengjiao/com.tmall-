@@ -1,0 +1,11 @@
+.content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.content {
+    zoom: 1;
+}
