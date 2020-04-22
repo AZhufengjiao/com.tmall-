@@ -1,4 +1,40 @@
 $(function () {
+    // 给window添加卷曲事件，让顶部固定导航出现
+    // let bushui = $(".Tmall-moisturizing").offset().top
+    // $(window).on("scroll", function () {
+    //     let windowtop = $(this).scrollTop()
+    //     if (windowtop >= bushui) {
+    //         $(".Tmall-top-input").show().animate({
+    //             height: 50
+    //         }, 2000)
+    //     } else {
+    //         $(".Tmall-top-input").animate({
+    //             height: 0
+    //         }, 2000).hide()
+    //     }
+    // })
+    // console.log(bushui)
+
+    // 给window添加卷曲事件，让顶部固定导航出现
+    let bushui = $(".Tmall-moisturizing").offset().top
+    $(window).on("scroll", function () {
+        let windowtop = $(this).scrollTop()
+        if (windowtop > bushui) {
+            $(".Tmall-top-input").show().animate({
+                height: 50
+            }, 500)
+        }
+        if (windowtop < bushui) {
+            $(".Tmall-top-input").animate({
+                height: 0
+            }, 500, function () {
+                $(this).hide()
+            })
+        }
+    })
+
+
+
     $(".Tmall-nav-right-ul li").hover(
         function () {
             $(this).find(".Tmall-nav-right-ul-li-bottom").show()
@@ -140,7 +176,6 @@ $(function () {
     // 经过第五行 品牌闪购 图片变淡
     $(".Tmall-brand-bottom").hover(
         function () {
-            console.log(123)
             $(this).css("opacity", .7)
         },
         function () {
@@ -148,6 +183,67 @@ $(function () {
         }
     )
 
+    // 第六行 品牌 鼠标经过li变暗，隐藏文字显示
 
+    $(".Tmall-trademark ul li").hover(
+        function () {
+            $(this).find(".Tmall-trademark-zzc").show()
+            $(this).find(".Tmall-trademark-hide-a1").show()
+            $(this).find(".Tmall-trademark-hide-a2").show()
+        },
+        function () {
+            $(".Tmall-trademark-zzc").hide()
+        }
+    )
+
+    // 第七行 今日疯抢 经过显示图片
+    $(".Tmall-supermarket-bottom-right-box1-top").on("mouseenter", "span", function () {
+        let jrfnum = $(this).index()
+        // jrfindex = jrfnum
+        // clearInterval(jrftime)
+        $(".Tmall-supermarket-bottom-right-box1-bottom-right img").eq(jrfnum).fadeIn(10).siblings("img").fadeOut(10)
+        $(this).addClass("lvlv").siblings("span").removeClass("lvlv")
+    })
+    $(".Tmall-supermarket-bottom-right-box1-top").on("mouseleave", "span", function () {
+
+    })
+
+    $(".Tmall-supermarket-bottom-right-box1").hover(
+        function () {
+            $(".Tmall-supermarket-bottom-right-box1-bottom-yy").show()
+        },
+        function () {
+            $(".Tmall-supermarket-bottom-right-box1-bottom-yy").hide()
+        }
+    )
+
+    // 今日疯抢定时器
+    let jrfindex = 0
+
+    function jrffn() {
+        if (jrfindex == $(".Tmall-supermarket-bottom-right-box1-bottom-right img").length - 1) {
+            jrfindex = 0
+        } else {
+            jrfindex++
+        }
+        $(".Tmall-supermarket-bottom-right-box1-bottom-left").eq(jrfindex).hide().siblings().show()
+        $(".Tmall-supermarket-bottom-right-box1-top span").eq(jrfindex).addClass("lvlv").siblings("span").removeClass("lvlv")
+        $(".Tmall-supermarket-bottom-right-box1-bottom-right img").eq(jrfindex).fadeOut(100).siblings("img").fadeIn(100)
+    }
+
+    let jrftime = setInterval(jrffn, 2000)
+
+    // 第八行 经过显示红边框
+    $(".Tmall-supermarket-bottom-right-box-ys").hover(
+        function () {
+            $(this).find(".Tmall-supermarket-bottom-right-box-img-yy").show()
+            $(this).addClass("redborder8").siblings().removeClass("redborder8")
+        },
+        function () {
+            $(".Tmall-supermarket-bottom-right-box-img-yy").hide()
+            $(this).removeClass("redborder8")
+        }
+
+    )
 
 })
