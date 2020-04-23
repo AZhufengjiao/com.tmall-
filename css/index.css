@@ -1705,3 +1705,40 @@ footer h1 {
         transform: rotate(360deg);
     }
 }
+
+.tmall-navleft li.li-0 {
+    background-color: #64c333;
+}
+
+.tmall-navleft li.li-1 {
+    background-color: #000000;
+}
+
+.tmall-navleft li.li-2 {
+    background-color: #ea5f8d;
+}
+
+.tmall-navleft li.li-3 {
+    background-color: #0aa6e8;
+}
+
+.tmall-navleft li.li-4 {
+    background-color: #64c333;
+}
+
+.tmall-navleft li.li-5 {
+    background-color: #f15453;
+}
+
+.tmall-navleft li.li-6 {
+    background-color: #19c8a9;
+}
+
+.tmall-navleft li.li-7 {
+    background-color: #000000;
+}
+
+.Tmall-international .container {
+    position: relative;
+    height: 670px;
+}
