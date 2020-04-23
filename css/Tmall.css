@@ -155,8 +155,13 @@ header {
     line-height: 10px;
 }
 
+.du1 {
+    z-index: 5;
+}
+
 .du2 {
     width: 60px;
+    z-index: 5;
 }
 
 .du3 {
@@ -164,6 +169,7 @@ header {
     padding: 6px;
     top: 29px;
     left: -52px;
+    z-index: 5;
 }
 
 .Tmall-nav-right-ul-li-bottom-top {
@@ -174,6 +180,7 @@ header {
 .Tmall-nav-right-ul-li-bottom-bottom {
     margin: auto;
     margin-left: 15px;
+    z-index: 5;
 }
 
 .snajiao2 {
@@ -188,6 +195,7 @@ header {
 .du4 {
     width: 120px;
     left: -76px;
+    z-index: 5;
 }
 
 .Tmall-nav-right-ul-li-bottom-top2 {
@@ -1041,6 +1049,7 @@ header {
     width: 1230px;
     height: 630px;
     margin-top: 35px;
+    overflow: hidden;
 }
 
 .Tmall-supermarket-bottom-left {
@@ -1386,4 +1395,137 @@ header {
 .Tmall-beautyleft {
     line-height: 2.6;
     text-align: center;
+}
+
+/* 十八行 */
+.Tmall-like {
+    margin: 30px auto;
+    width: 100%;
+    overflow: hidden;
+    height: 2986px;
+    border-bottom: 1px solid #d1d7dc;
+}
+
+.Tmall-like .container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.Tmall-like h2 {
+    position: relative;
+    color: #666;
+    text-align: center;
+    height: 43px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.Tmall-like h2::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 496px;
+    width: 38px;
+    border-top: 1px solid #979797;
+}
+
+.Tmall-like h2::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 530px;
+    width: 38px;
+    border-top: 1px solid #979797;
+}
+
+.Tmall-like-bottom {
+    width: 1230px;
+    height: 2883px;
+    margin-left: 0;
+    float: left;
+}
+
+
+.Tmall-like-bottom div {
+    margin-right: 7px;
+    margin-left: 0;
+    width: 239px;
+}
+
+.Tmall-like-bottom .Tmall-supermarket-bottom-right-box-top {
+    padding: 0 32px;
+    width: 197px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.Tmall-like-bottom-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Tmall-like-bottom-img {
+    background-image: url(../images/tamll/tmall-bottom-000.png);
+    width: 62px;
+    height: 35px;
+    margin: 0 auto 10px;
+}
+
+/* 十九行 七天无理由退货 */
+.Tmall-sales .container {
+    height: 147px;
+    padding-left: 82px;
+    background-image: url(../images/tamll/tmall-fz.png);
+    border-bottom: 1px solid #ededed;
+    box-sizing: border-box;
+}
+
+.Tmall-sales a {
+    display: inline-block;
+    width: 241px;
+    height: 108px;
+    margin-top: 18px;
+    margin-right: 46px;
+    float: left;
+}
+
+/* 二十行 支付方式 */
+.tmall-payment {}
+
+.tmall-payment .container {
+    height: 213px;
+    padding-top: 30px;
+    background-color: pink;
+    overflow: hidden;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.tmall-payment dl {
+    float: left;
+    width: 238px;
+    height: 90px;
+    padding-left: 38px;
+}
+
+.tmall-payment dl dt a {
+    font-size: 16px;
+    color: #646464;
+    font-weight: 500;
+}
+
+.tmall-payment dl dd a {
+    color: #8b8b8b;
+    font-weight: 500;
+}
+
+.tmall-payment dl dt {
+    height: 30px;
+}
+
+.tmall-payment dl dd {
+    line-height: 20px;
 }
