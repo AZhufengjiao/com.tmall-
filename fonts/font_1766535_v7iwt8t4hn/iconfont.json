@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1191733",
+      "name": "向上",
+      "font_class": "xiangshang",
+      "unicode": "e726",
+      "unicode_decimal": 59174
+    },
+    {
+      "icon_id": "9402962",
+      "name": "爱心",
+      "font_class": "changyongicon-",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "5423733",
+      "name": "刷新",
+      "font_class": "z",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "5131",
       "name": "家具建材",
       "font_class": "jiajujiancai",

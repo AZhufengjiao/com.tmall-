@@ -1,38 +1,50 @@
 $(function () {
-    // 给window添加卷曲事件，让顶部固定导航出现
-    // let bushui = $(".Tmall-moisturizing").offset().top
-    // $(window).on("scroll", function () {
-    //     let windowtop = $(this).scrollTop()
-    //     if (windowtop >= bushui) {
-    //         $(".Tmall-top-input").show().animate({
-    //             height: 50
-    //         }, 2000)
-    //     } else {
-    //         $(".Tmall-top-input").animate({
-    //             height: 0
-    //         }, 2000).hide()
-    //     }
-    // })
-    // console.log(bushui)
 
     // 给window添加卷曲事件，让顶部固定导航出现
+    // 页面卷曲到一定的高度，让左下边的固定导航显示
+    let oltop = $(".Tmall-slideshow-ol").offset().top
     let bushui = $(".Tmall-moisturizing").offset().top
     $(window).on("scroll", function () {
         let windowtop = $(this).scrollTop()
+        // 顶部搜索框的显示于隐藏
         if (windowtop > bushui) {
-            $(".Tmall-top-input").show().animate({
-                height: 50
-            }, 500)
+            $(".Tmall-top-input").slideDown(300)
         }
         if (windowtop < bushui) {
-            $(".Tmall-top-input").animate({
-                height: 0
-            }, 500, function () {
-                $(this).hide()
-            })
+            $(".Tmall-top-input").slideUp(300)
         }
+
+        // 左下角固定导航的显示于隐藏
+        if (windowtop > oltop) {
+            $(".tmall-navleft").show(500)
+        }
+        if (windowtop < oltop) {
+            $(".tmall-navleft").hide(500)
+        }
+
+        // 点击顶部div回到页面回到顶部
+        $(".tmall-navleft-top-db").on("click", function () {
+            $("html").animate({
+                scrollTop: 0
+            })
+        })
     })
 
+    let navarr = ["#64c333", "#000000", "#ea5f8d", "#0aa6e8", "#64c333", "#f15453", "#19c8a9", "#000000"]
+    // 经过左下角固定导航栏显示不同的颜色
+    $(".tmall-navleft li").hover(
+        function () {
+            let navindex = $(this).index()
+            $(this).css({
+                backgroundColor: navarr[navindex]
+            })
+        },
+        function () {
+            $(this).css({
+                backgroundColor: "#626262"
+            })
+        }
+    )
 
 
     $(".Tmall-nav-right-ul li").hover(
@@ -243,7 +255,9 @@ $(function () {
             $(".Tmall-supermarket-bottom-right-box-img-yy").hide()
             $(this).removeClass("redborder8")
         }
-
     )
+
+
+
 
 })
