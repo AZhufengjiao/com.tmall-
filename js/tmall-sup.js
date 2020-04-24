@@ -39,4 +39,22 @@ $(function () {
 
     })
 
+    // 第四行 鼠标经过盒子显示
+    $(".sup-classify-right").hover(
+        function () {
+            $(this).animate({
+                width: 174
+            }, 300, function () {
+                $(".sup-classify-right-hide-box").slideDown(200)
+            })
+
+        },
+        function () {
+            $(".sup-classify-right-hide-box").slideUp(200)
+            $(this).animate({
+                width: 152
+            }, 500)
+        }
+    )
+
 })

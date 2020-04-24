@@ -362,7 +362,7 @@ header a img {
 
 .sup-search-right-right-right- {
     position: absolute;
-    right: -14px;
+    right: -28px;
     top: 56px;
     width: 36px;
     height: 36px;
@@ -380,6 +380,7 @@ header a img {
     border: 1px solid #e5e5e5;
     border-bottom: none;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 .sup-search a:hover {
@@ -392,6 +393,7 @@ header a img {
     line-height: 3.5;
     font-weight: 500;
     padding-left: 30px;
+    z-index: 10;
 }
 
 .sup-search-right-left-box-hot a {
@@ -484,4 +486,103 @@ header a img {
 
 .search05 {
     left: -399px;
+}
+
+/* 第四行 产品分类 */
+.sup-classify h3 {
+    position: relative;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 68px;
+    background-color: #2f2f2f;
+}
+
+.sup-classify-center {
+    float: left;
+}
+
+.sup-classify-center span {
+    color: #d9d9d9;
+}
+
+.sup-classify-center a {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    padding: 11px 26px;
+    display: inline-block;
+}
+
+.sup-classify-right {
+    position: relative;
+    float: right;
+    background-color: #bf0000;
+    padding: 6px 30px;
+    width: 152px;
+}
+
+.sup-classify-right span {
+    display: inline-block;
+    color: #fcff00;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.sup-classify-right a {
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sup-classify-right-hide {
+    background-color: #fff;
+    top: -1px;
+    left: -17px;
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    border-radius: 20px;
+}
+
+.sup-classify-right-sj {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+}
+
+.sup-classify-right-hide-box {
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: 0;
+    width: 217px;
+    height: 272px;
+    border: 3px solid #bf0000;
+    border-top: 0;
+}
+
+.sup-classify-right-hide-box li {
+    float: left;
+    padding: 8px 0;
+    margin-right: 27px;
+}
+
+.sup-classify-right-hide-box ul {
+    background-color: #f4f4f4;
+    padding-left: 10px;
+}
+
+.sup-classify-right-hide-box h5 {
+    color: #424242;
+    padding: 26px 14px;
+    line-height: 1.4;
+}
+
+.sup-classify-right-hide-box h5 a {
+    color: #3939ff;
 }
