@@ -3,7 +3,7 @@ html {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 100000px;
 }
 
 /* 第一行 顶部 */
@@ -300,23 +300,23 @@ header a img {
 
 .sup-search-right {
     float: left;
-    overflow: hidden;
     padding: 8px 0;
 }
 
-.sup-search .container {
-    overflow: hidden;
-}
 
 .sup-search-right-left {
+    position: relative;
     float: left;
     padding: 8px;
     font-size: 16px;
     color: #30b30e;
     font-weight: 500;
+    margin-top: 4px;
     border: 1px solid #e5e5e5;
+    /* border-bottom: 2px solid #fff; */
     border-radius: 3px;
     margin-right: 60px;
+    z-index: 100;
 }
 
 .sup-search-right-center {
@@ -367,4 +367,121 @@ header a img {
     width: 36px;
     height: 36px;
     background-image: url(../images/tmall-sup/tmall-sup-03-right02.png);
+}
+
+/* 隐藏的盒子 */
+.sup-search-right-left-box {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 500px;
+    height: 174px;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+
+.sup-search a:hover {
+    color: #e22a40;
+}
+
+.sup-search-right-left-box h3 {
+    color: #999999;
+    font-size: 14px;
+    line-height: 3.5;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.sup-search-right-left-box-hot a {
+    float: left;
+    padding-right: 46px;
+    line-height: 2;
+    color: #333333;
+    font-size: 14px;
+}
+
+.sup-search-right-left-box-hot {
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.sup-search-right-left-box-letter span {
+    position: relative;
+    color: #000000;
+    float: left;
+    padding: 14px 20px;
+    z-index: 10;
+}
+
+.sup-search-right-left-box-letter {
+    padding-left: 30px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 10px;
+    position: relative;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+.ycborder {
+    border: 1px solid #eeeeee;
+    border-bottom: 2px solid #fff;
+}
+
+.sup-search-right-left-box ul {
+    margin: 0 0 0 30px;
+}
+
+.sup-search-right-tab1 li {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.sup-search-right-tab1 li h1 {
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    color: #dd2727;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sup-search-right-tab1-right {
+    position: absolute;
+    width: 470px;
+    left: -31px;
+    top: 47px;
+    padding-left: 30px;
+    padding-top: 20px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    width: 467px;
+}
+
+.sup-search-right-tab1-right a {
+    float: left;
+    margin-right: 30px;
+    color: #333333;
+    line-height: 1.8;
+}
+
+.suphide {
+    display: none;
+}
+
+.search02 {
+    left: -124px;
+}
+
+.search03 {
+    left: -204px;
+}
+
+.search04 {
+    left: -300px;
+}
+
+.search05 {
+    left: -399px;
 }
