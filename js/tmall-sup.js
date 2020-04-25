@@ -123,6 +123,63 @@ $(function () {
 
 
     // 轮播图
+    let slinum = 0
+    var letsol = 0
+    $(".sup-slideshow-center").hover(function () {
+        $(".sup-slideshow-center-right").show()
+        $(".sup-slideshow-center-left").show()
+        clearInterval(timer)
+    }, function () {
+        $(".sup-slideshow-center-right").hide()
+        $(".sup-slideshow-center-left").hide()
+        timer = setInterval(function () {
+            $(".sup-slideshow-center-right").click()
+        }, 2000)
+
+    })
+
+    // 点击右键
+    $(".sup-slideshow-center-right").click(function () {
+        slinum++
+        if (slinum > $(".sup-slideshow-center ul>li").length - 1) {
+            slinum = 0
+        }
+        $(".sup-slideshow-center ul>li").eq(slinum).fadeIn(200).siblings("li").fadeOut(200)
+        $(".sup-slideshow-center ol>li").eq(slinum).addClass("shenghong").siblings("li").removeClass("shenghong")
+    })
+
+    // 点击左键
+    $(".sup-slideshow-center-left").click(function () {
+        slinum--
+        if (slinum < 0) {
+            slinum = $(".sup-slideshow-center ul>li").length - 1
+        }
+        $(".sup-slideshow-center ul>li").eq(slinum).fadeIn(200).siblings("li").fadeOut(200)
+        $(".sup-slideshow-center ol>li").eq(slinum).addClass("shenghong").siblings("li").removeClass("shenghong")
+    })
+
+    // 经过ol里的li让指定图片显示
+    $(".sup-slideshow-center ol>li").hover(
+        function () {
+            setol = $(this).index()
+            $(this).addClass("shenghong").siblings("li").removeClass("shenghong")
+            slinum = setol
+            $(".sup-slideshow-center ul>li").eq(slinum).fadeIn(200).siblings("li").fadeOut(200)
+        }
+    )
+
+    // 添加定时器
+    let timer = setInterval(function () {
+        $(".sup-slideshow-center-right").click()
+    }, 2000)
+
+
+
+
+
+
+
+
 
 
 

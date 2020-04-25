@@ -459,6 +459,7 @@ header a img {
     border: 1px solid #e5e5e5;
     border-top: none;
     width: 467px;
+    background-color: #fff;
 }
 
 .sup-search-right-tab1-right a {
@@ -841,10 +842,9 @@ header a img {
 }
 
 .sup-slideshow-center {
+    position: relative;
     float: left;
     width: 782px;
-    height: 300px;
-    background-color: pink;
 }
 
 .sup-slideshow-left {
@@ -858,7 +858,7 @@ header a img {
 .sup-slideshow-center ul {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 300px;
 }
 
 .sup-slideshow-center ul li {
@@ -878,4 +878,270 @@ header a img {
 .sup-slideshow-center ul li a img {
     width: 100%;
     height: 100%;
+}
+
+.sup-slideshow-center-left i,
+.sup-slideshow-center-right i {
+    color: #fff;
+    font-size: 32px;
+    z-index: 2;
+}
+
+.sup-slideshow-center-left {
+    display: none;
+    position: absolute;
+    left: 6px;
+    top: 45%;
+    opacity: .5;
+    padding: 8px 4px;
+    background-color: #000;
+}
+
+.sup-slideshow-center-right {
+    display: none;
+    position: absolute;
+    right: 6px;
+    top: 45%;
+    opacity: .5;
+    padding: 8px 4px;
+    background-color: #000;
+}
+
+.sup-slideshow-center ol {
+    position: absolute;
+    top: 264px;
+    right: 2%;
+}
+
+.sup-slideshow-center ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: 3px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.sup-slideshow-center ol li.shenghong {
+    background-color: #c40000;
+}
+
+.row1 a {
+    float: left;
+    width: 260px;
+    height: 131px;
+}
+
+.row2 a {
+    float: left;
+    width: 260px;
+    height: 172px;
+}
+
+.row2 a img {
+    width: 100%;
+    height: 100%;
+}
+
+.row1 a img,
+.row2 a img {
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.row1 a:hover img {
+    transform: scale(1.2, 1.2);
+    z-index: 2;
+}
+
+.row2 a:hover img {
+    transform: scale(1.2, 1.2);
+    z-index: 2;
+}
+
+.sup-slideshow-right {
+    float: right;
+    width: 176px;
+}
+
+.sup-slideshow-right img {
+    float: left;
+    width: 100%;
+}
+
+.sup-slideshow-right a {
+    float: left;
+    width: 176px;
+    height: 160px;
+}
+
+/* 第六行 进口零食速食 */
+.snacks,
+.liquor {
+    margin-top: 30px;
+}
+
+.pitch1 {
+    width: 230px;
+    float: left;
+}
+
+.snacks p,
+.liquor p {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 5px;
+    line-height: 2;
+    border-bottom: 2px solid #000000;
+}
+
+.gaodian a {
+    float: left;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 1.3;
+    background: #fff;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+    padding: 16px 3px;
+    box-sizing: border-box;
+}
+
+.snacks-left-bottom {
+    display: block;
+    height: 296px;
+    width: 230px;
+}
+
+.pitch1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.snacks-bottom-center {
+    float: left;
+    width: 814px;
+}
+
+.snacks-bottom-center li {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 267px;
+    padding: 20px;
+    border-right: 1px solid #e7e7e7;
+    box-sizing: border-box;
+
+}
+
+.snacks-bottom-center li h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    color: #666666;
+    line-height: 4;
+    cursor: pointer;
+}
+
+.snacks-bottom-center li span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+.snacksi1 {
+    position: absolute;
+    left: 20px;
+    bottom: 27px;
+    font-size: 10px;
+}
+
+.snacks-bottom-center .snacksi2 {
+    position: absolute;
+    right: 26px;
+    bottom: 14px;
+    width: 32px;
+    background: #e9394e;
+    height: 32px;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 32px;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.snacks-bottom-right {
+    float: left;
+    width: 146px;
+}
+
+.snacks-bottom-right a {
+    float: left;
+    height: 272px;
+}
+
+.snacks-bottom-right a img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.snacks,
+.liquor {
+    margin-top: 30px;
+}
+
+.snacks p,
+.liquor p {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 5px;
+    line-height: 2;
+    border-bottom: 2px solid #000000;
+}
+
+/* 1 */
+.snacks .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #ff9228;
+    box-sizing: border-box;
+}
+
+/* 2 */
+.liquor .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #b373fb;
+    box-sizing: border-box;
+}
+
+/* 1 */
+.snacks .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #ff9228;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 2 */
+.liquor .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #b373fb;
+    text-decoration: underline;
+    color: #fff;
 }
