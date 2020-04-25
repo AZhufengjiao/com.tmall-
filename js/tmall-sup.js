@@ -71,9 +71,60 @@ $(function () {
                 top: 10
             }, 100)
         }
-
-        // 第五行 左tab栏 经过li 出现红色背景
-        $(".sup-slideshow-left li").hover()
     )
+
+
+    // 第五行 左tab栏 经过li 出现红色背景
+    $(".sup-slideshow-left li").hover(
+        function () {
+            $(this).css({
+                background: "#e31a3a"
+            })
+            $(this).find(".sup-slideshow-left-fj").css({
+                color: "#fff"
+            })
+            $(this).find("h3 i").css({
+                color: "#fff"
+            })
+            $(this).find("h3").css({
+                color: "#fff"
+            })
+            $(this).find(".sup-slideshow-left-a a").css({
+                color: "#fff",
+                opacity: .7
+            })
+            $(this).find(".sup-slideshow-hide").show()
+            $(this).find(".sup-slideshow-left-be").show()
+            $(this).find(".sup-slideshow-left-hide-box").show()
+        },
+        function () {
+            $(".sup-slideshow-left-hide-box").hide()
+            $(this).css({
+                background: "#fff"
+            })
+            $(this).find(".sup-slideshow-left-fj").css({
+                color: "#e22a40"
+            })
+            $(this).find("h3 i").css({
+                color: "#e22a40"
+            })
+            $(this).find("h3").css({
+                color: " #515151"
+            })
+            $(this).find(".sup-slideshow-left-a a").css({
+                color: "#999999",
+                opacity: 1
+            })
+            $(".sup-slideshow-hide").hide()
+            $(".sup-slideshow-left-be").hide()
+        }
+
+    )
+
+
+    // 轮播图
+
+
+
 
 })
