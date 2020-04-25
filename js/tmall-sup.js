@@ -20,12 +20,15 @@ $(function () {
         }
     )
 
-    // 鼠标经过h2 显示盒子
+    // 鼠标经过h2 显示盒子     // 经过h2让i旋转
     $(".sup-search-right-left").hover(
         function () {
             $(".sup-search-right-left-box").toggle()
         }
     )
+
+
+
 
     // 点击h3里隐藏盒子的位名，赋值给h3
     $(".sup-search-right-left-box-letter").on("click", "a", function () {
@@ -39,22 +42,38 @@ $(function () {
 
     })
 
+    // 
+
     // 第四行 鼠标经过盒子显示
     $(".sup-classify-right").hover(
         function () {
             $(this).animate({
-                width: 174
+                width: 186
             }, 300, function () {
                 $(".sup-classify-right-hide-box").slideDown(200)
             })
-
+            $(".sup-classify-right-sj i:nth-child(1)").animate({
+                top: -10
+            }, 100)
+            $(".sup-classify-right-sj i:nth-child(2)").animate({
+                top: 0
+            }, 100)
         },
         function () {
-            $(".sup-classify-right-hide-box").slideUp(200)
+            $(".sup-classify-right-hide-box").slideUp(300)
             $(this).animate({
-                width: 152
+                width: 140
             }, 500)
+            $(".sup-classify-right-sj i:nth-child(1)").animate({
+                top: 0
+            }, 100)
+            $(".sup-classify-right-sj i:nth-child(2)").animate({
+                top: 10
+            }, 100)
         }
+
+        // 第五行 左tab栏 经过li 出现红色背景
+        $(".sup-slideshow-left li").hover()
     )
 
 })

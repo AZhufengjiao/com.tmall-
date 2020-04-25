@@ -6,6 +6,104 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1015",
+      "name": "卷纸",
+      "font_class": "juanzhi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "5025",
+      "name": "奶瓶",
+      "font_class": "naiping1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "622774",
+      "name": "飞行 旅游 出差 飞机 800",
+      "font_class": "feiji800",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "1183175",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "1912304",
+      "name": "剪刀",
+      "font_class": "xinxinicon",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "2180846",
+      "name": "向右",
+      "font_class": "xiangyou1",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "3865238",
+      "name": "油桶",
+      "font_class": "youtong",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "3889349",
+      "name": "饮料",
+      "font_class": "yinliao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "7598879",
+      "name": "口红",
+      "font_class": "kouhong1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "8843671",
+      "name": "向右",
+      "font_class": "xiangyou2",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1173017",
+      "name": "车巴巴-购物车",
+      "font_class": "head104",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "2480669",
+      "name": "三角_下",
+      "font_class": "sanjiao_xia",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "5121504",
+      "name": "三角上",
+      "font_class": "sanjiaoshang",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1222256",
+      "name": "产品列表_向上收起",
+      "font_class": "chanpinliebiaoxiangshangshouqi",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
       "icon_id": "5124358",
       "name": "剪刀",
       "font_class": "tubiaoCSban-",

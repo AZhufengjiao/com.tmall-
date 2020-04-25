@@ -519,7 +519,8 @@ header a img {
     float: right;
     background-color: #bf0000;
     padding: 6px 30px;
-    width: 152px;
+    width: 140px;
+    border-radius: 13px 0 0 17px;
 }
 
 .sup-classify-right span {
@@ -527,7 +528,7 @@ header a img {
     color: #fcff00;
     font-weight: 600;
     font-size: 18px;
-
+    margin-left: 14px;
 }
 
 .sup-classify-right a {
@@ -538,10 +539,10 @@ header a img {
 
 .sup-classify-right-hide {
     background-color: #fff;
-    top: -1px;
-    left: -17px;
     position: absolute;
     width: 35px;
+    top: -2px;
+    left: 0px;
     height: 36px;
     border-radius: 20px;
 }
@@ -552,7 +553,6 @@ header a img {
     right: 9px;
     width: 12px;
     height: 12px;
-    background-color: #fff;
 }
 
 .sup-classify-right-hide-box {
@@ -585,4 +585,106 @@ header a img {
 
 .sup-classify-right-hide-box h5 a {
     color: #3939ff;
+}
+
+.sup-search-right-left i {
+    display: inline-block;
+}
+
+.sup-search-right-left:hover i {
+
+    transform: rotate(-180deg);
+}
+
+.sup-search-right-right-lefr i {
+    color: #34b413;
+}
+
+.sup-classify-center a:hover {
+    color: #e22a40;
+}
+
+.sup-classify-right-sj {
+    overflow: hidden;
+}
+
+.sup-classify-right-sj i:nth-child(1),
+.sup-classify-right-sj i:nth-child(2) {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+}
+
+.sup-classify-right-sj i:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sup-classify-right-sj i:nth-child(2) {
+    top: 10px;
+}
+
+.sup-classify-right-hide i {
+    position: absolute;
+    top: 2px;
+    background-color: #333333;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 23px;
+}
+
+/* 第五行 左tab栏 */
+.sup-slideshow-left {
+    background: #fff;
+    width: 232px;
+}
+
+.sup-slideshow-left ul {
+    padding: 0 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.sup-slideshow-left li {
+    position: relative;
+    padding: 10px 0;
+    padding-left: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sup-slideshow-left i {
+    position: absolute;
+    left: 2px;
+    top: 15px;
+    font-size: 20px;
+    color: #e22a40;
+}
+
+.sup-slideshow-left li h3 {
+    color: #515151;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.sup-slideshow-left li h3 i {
+    position: absolute;
+    left: 192px;
+    top: 10px;
+    color: #515151;
+    font-size: 13px;
+}
+
+.sup-slideshow-left li div a {
+    color: #999999;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.sup-slideshow-left li div a:hover {
+    text-decoration: underline;
 }
