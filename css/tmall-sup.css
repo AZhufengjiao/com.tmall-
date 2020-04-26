@@ -3,7 +3,7 @@ html {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100000px;
+    height: 50000px;
 }
 
 /* 第一行 顶部 */
@@ -1108,7 +1108,18 @@ header a img {
 .drinks,
 .health,
 .rice,
-.oils {
+.oils,
+.clean,
+.hairdressing,
+.nurse,
+.paper,
+.family,
+.kitchen,
+.furniture,
+.spin,
+.electric,
+.work,
+.mother {
     margin-top: 30px;
 }
 
@@ -1120,7 +1131,18 @@ header a img {
 .drinks p,
 .health p,
 .rice p,
-.oils p {
+.oils p,
+.clean p,
+.hairdressing p,
+.nurse p,
+.paper p,
+.family p,
+.kitchen p,
+.furniture p,
+.spin p,
+.electric p,
+.work p,
+.mother p {
     font-weight: 700;
     font-size: 20px;
     padding-left: 5px;
@@ -1193,6 +1215,95 @@ header a img {
     box-sizing: border-box;
 }
 
+/* 10 */
+.clean .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #6290f6;
+    box-sizing: border-box;
+}
+
+/* 11 */
+.hairdressing .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #ff909f;
+    box-sizing: border-box;
+}
+
+/* 12 */
+.nurse .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #28cfc1;
+    box-sizing: border-box;
+}
+
+/* 13 */
+.paper .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #f8c374;
+    box-sizing: border-box;
+}
+
+/* 14 */
+.family .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #84aeff;
+    box-sizing: border-box;
+}
+
+/* 15 */
+.kitchen .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #6adea6;
+    box-sizing: border-box;
+}
+
+/* 16 */
+.furniture .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #c97bff;
+    box-sizing: border-box;
+}
+
+/* 17 */
+.spin .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #f59cec;
+    box-sizing: border-box;
+}
+
+/* 18 */
+.electric .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #5095fc;
+    box-sizing: border-box;
+}
+
+/* 19 */
+.work .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #49bcb0;
+    box-sizing: border-box;
+}
+
+/* 20 */
+.mother .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #ff77ad;
+    box-sizing: border-box;
+}
+
+
 
 /* 1 */
 .snacks .gaodian a:hover {
@@ -1255,6 +1366,94 @@ header a img {
 .oils .gaodian a:hover {
     border: 1px solid rgba(0, 0, 0, .3);
     background: #f4935f;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 10 */
+.clean .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #6290f6;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 11 */
+.hairdressing .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #ff909f;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 12 */
+.nurse .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #28cfc1;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 13 */
+.paper .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #f8c374;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 14 */
+.family .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #84aeff;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 15 */
+.kitchen .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #6adea6;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 16 */
+.furniture .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #c97bff;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 17 */
+.spin .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #f59cec;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 18 */
+.electric .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #5095fc;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 19 */
+.work .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #49bcb0;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 20 */
+.mother .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #ff77ad;
     text-decoration: underline;
     color: #fff;
 }
