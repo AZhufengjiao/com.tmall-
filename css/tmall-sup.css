@@ -9,7 +9,7 @@ html {
 /* 第一行 顶部 */
 header {
     width: 100%;
-    background-color: #4489fe;
+    background-color: #fa698c;
 }
 
 header a {
@@ -1101,12 +1101,26 @@ header a img {
 
 
 .snacks,
-.liquor {
+.liquor,
+.milk,
+.relaxation,
+.biscuits,
+.drinks,
+.health,
+.rice,
+.oils {
     margin-top: 30px;
 }
 
 .snacks p,
-.liquor p {
+.liquor p,
+.milk p,
+.relaxation p,
+.biscuits p,
+.drinks p,
+.health p,
+.rice p,
+.oils p {
     font-weight: 700;
     font-size: 20px;
     padding-left: 5px;
@@ -1130,6 +1144,56 @@ header a img {
     box-sizing: border-box;
 }
 
+/* 3 6 */
+.milk .gaodian,
+.drinks .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #2abff6;
+    box-sizing: border-box;
+}
+
+/* 4 */
+.relaxation .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #67cd7d;
+    box-sizing: border-box;
+}
+
+/* 5 */
+.biscuits .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #ff7a64;
+    box-sizing: border-box;
+}
+
+/* 7 */
+.health .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #c6a868;
+    box-sizing: border-box;
+}
+
+/* 8 */
+.rice .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #ffbb00;
+    box-sizing: border-box;
+}
+
+/* 9 */
+.oils .gaodian {
+    width: 230px;
+    padding: 25px 0 20px 25px;
+    background-color: #f4935f;
+    box-sizing: border-box;
+}
+
+
 /* 1 */
 .snacks .gaodian a:hover {
     border: 1px solid rgba(0, 0, 0, .3);
@@ -1142,6 +1206,55 @@ header a img {
 .liquor .gaodian a:hover {
     border: 1px solid rgba(0, 0, 0, .3);
     background: #b373fb;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 3 6 */
+.milk .gaodian a:hover,
+.drinks .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #2abff6;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 4 */
+.relaxation .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #67cd7d;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 5 */
+.biscuits .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #ff7a64;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 7 */
+.health .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #c6a868;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 8 */
+.rice .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #ffbb00;
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* 9 */
+.oils .gaodian a:hover {
+    border: 1px solid rgba(0, 0, 0, .3);
+    background: #f4935f;
     text-decoration: underline;
     color: #fff;
 }
