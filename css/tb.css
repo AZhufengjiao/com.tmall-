@@ -4,6 +4,7 @@ html {
     margin: 0;
     width: 100%;
     height: 13738px;
+    background: #f4f4f4;
 }
 
 .container {
@@ -29,17 +30,19 @@ html {
 .Tmall-nav-left-div {
     position: relative;
     float: left;
-    height: 35px;
-    line-height: 36px;
+    height: 32px;
+    line-height: 323px;
+    line-height: 32px;
     padding: 0 10px 0 6px;
     box-sizing: border-box;
     color: #000000;
+    z-index: 10;
 }
 
 .Tmall-nav-left-div ul {
     display: none;
     position: absolute;
-    top: 35px;
+    top: 32px;
     background: #fff;
     left: 0;
     height: 240px;
@@ -359,4 +362,215 @@ html {
 .tbTopImg .container img {
     width: 100%;
     height: 96%;
+}
+
+/* 第三排 淘宝搜索栏 */
+.tbInput {
+    padding-top: 36px;
+    padding-bottom: 26px;
+    background: #fff;
+}
+
+.tbInputLeft {
+    float: left;
+}
+
+.tbInputLeft a {
+    display: inline-block;
+    margin-left: 22px;
+
+    width: 190px;
+    height: 58px;
+}
+
+
+.tbInputCenter {
+    position: relative;
+    float: left;
+}
+
+.tbInputCenterInput {
+    position: relative;
+    height: 36px;
+    border: 2px solid #ff5000;
+    border-radius: 20px;
+    margin-top: 12px;
+    margin-left: 48px;
+}
+
+.tbInputCenterInput input {
+    float: left;
+    height: 99%;
+    margin-left: 31px;
+    width: 508px;
+    border: none;
+}
+
+.tbInputCenterInput button {
+    float: left;
+    border: none;
+    color: #fff;
+    height: 100%;
+    width: 70px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0 13px 13px 0;
+    background: #ff6800;
+    float: left;
+}
+
+.tbInputCenterInput i:nth-child(1) {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #676767;
+}
+
+.tbInputCenterInput i:nth-child(2) {
+    position: absolute;
+    top: 8px;
+    right: 82px;
+    color: #989898;
+    font-weight: 600;
+}
+
+/* 定位上 */
+.tbInputCenterTop {
+    position: absolute;
+    top: -6px;
+    left: 66px;
+}
+
+.tbInputCenterTop b {
+    background: #ff6e00;
+    color: #fff;
+    padding: 4px;
+    border-radius: 6px 6px 0 0;
+}
+
+.tbInputCenterTop a {
+    padding: 4px;
+    color: #ff4400;
+    font-size: 10px;
+}
+
+.tbInputCenterTop a:hover {
+    background: #ffeee5;
+}
+
+/* 定位 下 */
+.tbInputCenter ul {
+    position: absolute;
+    left: 50px;
+    bottom: -20px;
+}
+
+.tbInputCenter ul li:nth-child(3) a {
+    color: #ff5000;
+}
+
+.tbInputCenter ul li a:hover {
+    color: #ff5000;
+}
+
+.tbInputCenter ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.tbInputCenter li a {
+    color: #3c3c3c;
+    font-size: 12px;
+}
+
+.tbInput .container {
+    position: relative;
+}
+
+/* 右 */
+.tbInputRight {
+    position: absolute;
+    right: 106px;
+    top: -13px;
+    border: 1px solid #eeeeee;
+    padding: 4px;
+}
+
+.tbInputRight span {
+    position: absolute;
+    left: -17px;
+    top: -1px;
+    padding: 0px 4px;
+    color: #dfe4ed;
+    border: 1px solid #eeeeee;
+}
+
+
+.tbInputRight a {
+    display: block;
+    color: #ff5000;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.tbInputRight img {
+    width: 62px;
+    height: 62px;
+}
+
+/* 第四行 轮播图 */
+/* top */
+.slideshowTop {
+    background: #ff7a00;
+}
+
+.slideshowTop span {
+    float: left;
+    color: #fff;
+    background: #ff5000;
+    font-size: 16px;
+    padding: 8px 60px;
+}
+
+.slideshowTop ul {
+    float: left;
+    z-index: 10;
+}
+
+.slideshowTop li {
+    position: relative;
+    float: left;
+    z-index: 2;
+}
+
+.slideshowTop a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 8px 11px;
+}
+
+.slideshowTop b {
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.slideshowTop li i {
+    display: none;
+    position: absolute;
+    top: -13px;
+    left: 31%;
+    color: #ff5000;
+    width: 25px;
+    height: 14px;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.slideshowTop li:hover i {
+    display: block;
 }

@@ -21,5 +21,12 @@ $(function () {
     )
 
 
+    // 第三行 淘宝搜索栏  点击x让二维码隐藏
+    $(".tbInputRight").on("click", "span", function () {
+        $(".tbInputRight").hide()
+    })
+
+
+
 
 })
