@@ -228,7 +228,7 @@ $(function () {
     let mother = $(".mother").offset().top - 300
     let arr = [snacks, liquor, milk, relaxation, biscuits, drinks, health, rice, oils, clean, hairdressing, nurse, paper, family, kitchen, furniture, spin, electric, work, mother]
     // 给页面添加卷曲事件
-    // console.log($(".sup-slideshow-left").offset().top)
+    let sc = $(".sup-slideshow-left").offset().top
     $(document).on("scroll", function () {
         let thistop = $(this).scrollTop()
 
@@ -239,24 +239,33 @@ $(function () {
         })
 
         if (thistop > $(".sup-slideshow-left").offset().top) {
-
             $('.sup-classify').css({
                 "position": "fixed",
                 "top": 0,
                 "border-bottom": "1px solid #2f2f2f"
             })
-        } else {
+
+
+        }
+        if (thistop < sc) {
             $('.sup-classify').css({
                 "position": "static",
                 "border-bottom": 0
             })
         }
+        //  else {
+        //     $('.sup-classify').css({
+        //         "position": "static",
+        //         "border-bottom": 0
+        //     })
+        // }
 
         if (thistop > $(".snacks").offset().top) {
             $('.sup-classify').on("mouseenter", function () {
                 $(".sup-slideshow-left").css({
                     "position": "fixed",
                     "top": 38,
+                    "z-index": 200
                 })
             })
 
@@ -275,21 +284,19 @@ $(function () {
                     "position": "static"
                 })
             })
+
+
+            $(".sup-slideshow-left").css({
+                "position": "static"
+            })
+
         }
-
-
-
-
-
-
-
-
 
 
 
         // 1
         if (thistop > snacks) {
-            $(".sup-location a").eq(0).addClass("colors").siblings("a").removeClass("colors")
+            fn(0)
             $(".sup-location").addClass("showhis")
         } else {
             $(".sup-location").removeClass("showhis")
@@ -297,92 +304,93 @@ $(function () {
 
         // 2
         if (thistop > liquor) {
-            $(".sup-location a").eq(1).addClass("colors").siblings("a").removeClass("colors")
+            fn(1)
         }
 
         // 3
         if (thistop > milk) {
-            $(".sup-location a").eq(2).addClass("colors").siblings("a").removeClass("colors")
+            fn(2)
         }
 
         // 4
         if (thistop > relaxation) {
-            $(".sup-location a").eq(3).addClass("colors").siblings("a").removeClass("colors")
+            fn(3)
         }
 
         // 5
         if (thistop > biscuits) {
-            $(".sup-location a").eq(4).addClass("colors").siblings("a").removeClass("colors")
+            fn(4)
         }
         // 6
         if (thistop > drinks) {
-            $(".sup-location a").eq(5).addClass("colors").siblings("a").removeClass("colors")
+            fn(5)
         }
         // 7
         if (thistop > health) {
-            $(".sup-location a").eq(6).addClass("colors").siblings("a").removeClass("colors")
+            fn(6)
         }
         // 8
         if (thistop > rice) {
-            $(".sup-location a").eq(7).addClass("colors").siblings("a").removeClass("colors")
+            fn(7)
         }
         // 9
         if (thistop > oils) {
-            $(".sup-location a").eq(8).addClass("colors").siblings("a").removeClass("colors")
+            fn(8)
         }
         // 10
         if (thistop > clean) {
-            $(".sup-location a").eq(9).addClass("colors").siblings("a").removeClass("colors")
+            fn(9)
         }
         // 11
         if (thistop > hairdressing) {
-            $(".sup-location a").eq(10).addClass("colors").siblings("a").removeClass("colors")
+            fn(10)
         }
         // 12
         if (thistop > nurse) {
-            $(".sup-location a").eq(11).addClass("colors").siblings("a").removeClass("colors")
+            fn(11)
         }
 
         //13
         if (thistop > paper) {
-            $(".sup-location a").eq(12).addClass("colors").siblings("a").removeClass("colors")
+            fn(12)
         }
-
 
         // 14
         if (thistop > family) {
-            $(".sup-location a").eq(13).addClass("colors").siblings("a").removeClass("colors")
+            fn(13)
         }
 
         // 15
         if (thistop > kitchen) {
-            $(".sup-location a").eq(14).addClass("colors").siblings("a").removeClass("colors")
+            fn(14)
         }
         // 16
         if (thistop > furniture) {
-            $(".sup-location a").eq(15).addClass("colors").siblings("a").removeClass("colors")
+            fn(15)
         }
         // 17
         if (thistop > spin) {
-            $(".sup-location a").eq(16).addClass("colors").siblings("a").removeClass("colors")
+            fn(16)
         }
         // 18
         if (thistop > electric) {
-            $(".sup-location a").eq(17).addClass("colors").siblings("a").removeClass("colors")
+            fn(17)
         }
         // 19
         if (thistop > work) {
-            $(".sup-location a").eq(18).addClass("colors").siblings("a").removeClass("colors")
+            fn(18)
         }
         // 10
         if (thistop > mother) {
-            $(".sup-location a").eq(19).addClass("colors").siblings("a").removeClass("colors")
+            fn(19)
         }
 
     })
 
 
-
+    function fn(num) {
+        $(".sup-location a").eq(num).addClass("colors").siblings("a").removeClass("colors")
+    }
 
 
 

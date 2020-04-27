@@ -1,0 +1,362 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 13738px;
+}
+
+.container {
+    width: 1190px;
+    margin: auto;
+}
+
+
+/* 第一行 淘宝首部导航  */
+.Tmall-nav {
+    width: 100%;
+    height: 32px;
+    background-color: #f2f2f2;
+    color: #999999;
+}
+
+.Tmall-nav .container {
+    height: 35px;
+    position: relative;
+}
+
+/* 左边滚动条 */
+.Tmall-nav-left-div {
+    position: relative;
+    float: left;
+    height: 35px;
+    line-height: 36px;
+    padding: 0 10px 0 6px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.Tmall-nav-left-div ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background: #fff;
+    left: 0;
+    height: 240px;
+    overflow-x: auto;
+}
+
+.Tmall-nav-left-div li a {
+    display: inline-block;
+    width: 222px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 8px;
+    color: #000;
+}
+
+.Tmall-nav-left-div li a:hover {
+    color: #000;
+    background-color: #f4f4f4;
+}
+
+
+
+.Tmall-nav-left {
+    float: left;
+    line-height: 32px;
+
+}
+
+.Tmall-nav-left a {
+    color: #999999;
+    font-size: 13px;
+}
+
+.Tmall-nav-left a:hover {
+    color: #ff4400;
+}
+
+.Tmall-nav-left a.xixi {
+    color: #ff4400;
+}
+
+.Tmall-nav-left em {
+    font-weight: 500;
+}
+
+.Tmall-nav-right {
+    float: right;
+    line-height: 32px;
+}
+
+.Tmall-nav-right a {
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+/* 经过变红色 */
+.Tmall-nav-right a:hover {
+    color: #ff4400;
+}
+
+
+.Tmall-nav-right-ul li {
+    float: left;
+}
+
+.Tmall-nav-right-ul li {
+    padding: 0 10px;
+}
+
+.Tmall-nav-right-ul li:nth-child(1):hover,
+.Tmall-nav-right-ul li:nth-child(3):hover,
+.Tmall-nav-right-ul li:nth-child(5):hover,
+.Tmall-nav-right-ul li:nth-child(6):hover,
+.Tmall-nav-right-ul li:nth-child(7):hover {
+    background-color: #fff;
+}
+
+.Tmall-nav-right-ul i {
+    color: #ff4400;
+    font-size: 8px;
+}
+
+.Tmall-nav-right-ul li {
+    position: relative;
+}
+
+/* 小三角 */
+.Tmall-nav .tmall-sj {
+    font-size: 6px;
+    color: #75451f;
+}
+
+.Tmall-nav i.Tmall-nav-02 {
+    color: #9c9c9c;
+    font-size: 18px;
+}
+
+/* .xiaosanjiao {
+    margin-left: 3px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    right: 1px;
+    border: 3px solid #bdbdbd;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+} */
+
+.sc-hou {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    font-weight: 100;
+    color: #e3e5eb;
+}
+
+/* 隐藏的div */
+.Tmall-nav-right-ul-li-bottom {
+    width: 80px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    line-height: 22px;
+    background-color: #fff;
+    padding: 12px 5px;
+    color: #6c6c6c;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+.Tmall-nav-right-ul-li-bottom a {
+    line-height: 10px;
+    font-size: 14px;
+}
+
+.du1 {
+    z-index: 5;
+}
+
+.du2 {
+    width: 60px;
+    z-index: 5;
+}
+
+.du3 {
+    width: 170px;
+    padding: 6px;
+    top: 29px;
+    left: -52px;
+    z-index: 5;
+}
+
+.Tmall-nav-right-ul-li-bottom-top {
+    height: 172px;
+    overflow: hidden;
+}
+
+.Tmall-nav-right-ul-li-bottom-bottom {
+    margin: auto;
+    margin-left: 15px;
+    z-index: 5;
+}
+
+.snajiao2 {
+    top: -14px;
+    right: 77px;
+    border: 8px solid #fff;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.du4 {
+    width: 120px;
+    left: -76px;
+    z-index: 5;
+}
+
+.Tmall-nav-right-ul-li-bottom-top2 {
+    border-bottom: 1px dotted #827777;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.Tmall-nav-right-ul-li-bottom-top2-h3 {
+    color: #666666;
+    font-weight: 700;
+}
+
+.Tmall-nav-right-ul-li-bottom-bottom2 {
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #827777;
+}
+
+.du5 {
+    z-index: 5;
+    left: -1110px;
+    width: 1183px;
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.Tmall-nav-right-ul-li-bottom-left {
+    float: left;
+    width: 316px;
+    height: 100%;
+    border-right: 1px solid #f5f5f5;
+}
+
+.Tmall-nav-right-ul-li-bottom-left ul h2,
+.Tmall-nav-right-ul-li-bottom-center ul h2,
+.Tmall-nav-right-ul-li-bottom-right ul h2,
+.Tmall-nav-right-ul-li-bottom-bu ul h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fc4200;
+    padding-left: 10px;
+    font-weight: 600;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.Tmall-nav-right-ul-li-bottom-left ul li,
+.Tmall-nav-right-ul-li-bottom-center ul li,
+.Tmall-nav-right-ul-li-bottom-right ul li,
+.Tmall-nav-right-ul-li-bottom-bu ul li {
+    padding-right: 35px;
+    color: #666666;
+    line-height: 2.3;
+}
+
+.Tmall-nav-right-ul-li-bottom-left li a,
+.Tmall-nav-right-ul-li-bottom-center li a,
+.Tmall-nav-right-ul-li-bottom-right li a,
+.Tmall-nav-right-ul-li-bottom-bu li a {
+    color: #3c3c3c;
+}
+
+.Tmall-nav-right-ul-li-bottom-center {
+    width: 305px;
+    border-right: 1px solid #f5f5f5;
+    float: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.Tmall-nav-right-ul-li-bottom-center ul h2 {
+    color: #a6bd46;
+}
+
+.Tmall-nav-right-ul-li-bottom-right ul h2 {
+    color: #d75696;
+}
+
+.Tmall-nav-right-ul-li-bottom-right {
+    width: 262px;
+    float: left;
+    padding-left: 10px;
+
+}
+
+/* 精灵图 */
+.nav-jlt-red,
+.nav-jlt-nored {
+    position: absolute;
+    left: 58px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/tamll/nav-jltHN.png);
+    background-position: -36px -1px;
+}
+
+.nav-jlt-nored {
+    background-position: -36px -12px;
+}
+
+/* 隐藏 */
+.Tmall-nav-right-ul-li-bottom {
+    display: none;
+}
+
+/* 效果，经过旋转 */
+/* .Tmall-nav-right-ul li:hover .xiaosanjiao {
+    transform: rotate(180deg);
+    top: 13px
+} */
+
+.Tmall-nav-right-ul-li-bottom-bu ul h2 {
+    color: #2e9fdb;
+}
+
+.Tmall-nav-right-ul-li-bottom-bu ul li {
+    float: left;
+    margin-right: 10px;
+    width: 85px;
+}
+
+.Tmall-nav-right-ul-li-bottom-bu {
+    float: left;
+    width: 288px;
+}
+
+/* 第二行 淘宝顶部图片 */
+.tbTopImg {
+    background: #f40d4d
+}
+
+.tbTopImg a {
+    display: inline-block;
+    height: 70px;
+    width: 1190px;
+}
+
+.tbTopImg .container img {
+    width: 100%;
+    height: 96%;
+}
