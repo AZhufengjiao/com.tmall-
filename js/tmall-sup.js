@@ -173,8 +173,213 @@ $(function () {
         $(".sup-slideshow-center-right").click()
     }, 2000)
 
+    // 固定定位
+    $(".sup-location a").hover(
+        function () {
+            let indexs = $(this).index()
+            $(this).eq(indexs).addClass("colors")
+        },
+        function () {
+            let indexs = $(this).index()
+            $(this).eq(indexs).removeClass("colors")
+        }
+    )
+
+    // 获取20个元素的offset().top
+    // 1
+    let snacks = $(".snacks").offset().top - 40
+    // 2
+    let liquor = $(".liquor").offset().top - 350
+    // 3
+    let milk = $(".milk").offset().top - 300
+    // 4
+    let relaxation = $(".relaxation").offset().top - 300
+    // 5
+    let biscuits = $(".biscuits").offset().top - 300
+    // 6
+    let drinks = $(".drinks").offset().top - 300
+    // 7
+    let health = $(".health").offset().top - 300
+    // 8
+    let rice = $(".rice").offset().top - 300
+    // 9
+    let oils = $(".oils").offset().top - 300
+    // 10
+    let clean = $(".clean").offset().top - 300
+    // 11
+    let hairdressing = $(".hairdressing").offset().top - 300
+    // 12
+    let nurse = $(".nurse ").offset().top - 300
+    // 13
+    let paper = $(".paper ").offset().top - 300
+    // 14
+    let family = $(".family ").offset().top - 300
+    // 15
+    let kitchen = $(".kitchen").offset().top - 300
+    // 16
+    let furniture = $(".furniture").offset().top - 300
+    // 17
+    let spin = $(".spin").offset().top - 300
+    // 18
+    let electric = $(".electric").offset().top - 300
+    // 19
+    let work = $(".work").offset().top - 300
+    // 20
+    let mother = $(".mother").offset().top - 300
+    let arr = [snacks, liquor, milk, relaxation, biscuits, drinks, health, rice, oils, clean, hairdressing, nurse, paper, family, kitchen, furniture, spin, electric, work, mother]
+    // 给页面添加卷曲事件
+    // console.log($(".sup-slideshow-left").offset().top)
+    $(document).on("scroll", function () {
+        let thistop = $(this).scrollTop()
+
+        // 点击
+        $(".sup-location").on("click", "a", function () {
+            let indexa = $(this).index()
+            $(document).scrollTop(`${arr[indexa]+20}`)
+        })
+
+        if (thistop > $(".sup-slideshow-left").offset().top) {
+
+            $('.sup-classify').css({
+                "position": "fixed",
+                "top": 0,
+                "border-bottom": "1px solid #2f2f2f"
+            })
+        } else {
+            $('.sup-classify').css({
+                "position": "static",
+                "border-bottom": 0
+            })
+        }
+
+        if (thistop > $(".snacks").offset().top) {
+            $('.sup-classify').on("mouseenter", function () {
+                $(".sup-slideshow-left").css({
+                    "position": "fixed",
+                    "top": 38,
+                })
+            })
+
+            $(".sup-slideshow-left").on("mouseleave", function () {
+                $(this).css({
+                    "position": "static"
+                })
+            })
+
+        }
+
+        if (thistop < $(".snacks").offset().top) {
+
+            $('.sup-classify').on("mouseenter", function () {
+                $(".sup-slideshow-left").css({
+                    "position": "static"
+                })
+            })
+        }
 
 
+
+
+
+
+
+
+
+
+
+        // 1
+        if (thistop > snacks) {
+            $(".sup-location a").eq(0).addClass("colors").siblings("a").removeClass("colors")
+            $(".sup-location").addClass("showhis")
+        } else {
+            $(".sup-location").removeClass("showhis")
+        }
+
+        // 2
+        if (thistop > liquor) {
+            $(".sup-location a").eq(1).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+        // 3
+        if (thistop > milk) {
+            $(".sup-location a").eq(2).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+        // 4
+        if (thistop > relaxation) {
+            $(".sup-location a").eq(3).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+        // 5
+        if (thistop > biscuits) {
+            $(".sup-location a").eq(4).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 6
+        if (thistop > drinks) {
+            $(".sup-location a").eq(5).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 7
+        if (thistop > health) {
+            $(".sup-location a").eq(6).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 8
+        if (thistop > rice) {
+            $(".sup-location a").eq(7).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 9
+        if (thistop > oils) {
+            $(".sup-location a").eq(8).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 10
+        if (thistop > clean) {
+            $(".sup-location a").eq(9).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 11
+        if (thistop > hairdressing) {
+            $(".sup-location a").eq(10).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 12
+        if (thistop > nurse) {
+            $(".sup-location a").eq(11).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+        //13
+        if (thistop > paper) {
+            $(".sup-location a").eq(12).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+
+        // 14
+        if (thistop > family) {
+            $(".sup-location a").eq(13).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+        // 15
+        if (thistop > kitchen) {
+            $(".sup-location a").eq(14).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 16
+        if (thistop > furniture) {
+            $(".sup-location a").eq(15).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 17
+        if (thistop > spin) {
+            $(".sup-location a").eq(16).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 18
+        if (thistop > electric) {
+            $(".sup-location a").eq(17).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 19
+        if (thistop > work) {
+            $(".sup-location a").eq(18).addClass("colors").siblings("a").removeClass("colors")
+        }
+        // 10
+        if (thistop > mother) {
+            $(".sup-location a").eq(19).addClass("colors").siblings("a").removeClass("colors")
+        }
+
+    })
 
 
 
