@@ -81,6 +81,7 @@ li {
     width: 181px;
     position: absolute;
     z-index: 999;
+    float: left;
     border: 1px solid #ff5000;
 }
 
@@ -133,7 +134,7 @@ li {
 
 /*banner浮层滑动显示弹框*/
 .cat_subcont {
-    /* display: none; */
+    display: none;
 }
 
 .cat_subcont.active {

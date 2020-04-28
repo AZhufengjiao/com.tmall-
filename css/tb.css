@@ -574,3 +574,11 @@ html {
 .slideshowTop li:hover i {
     display: block;
 }
+
+/* 第一个轮播 */
+#box {
+    width: 543px;
+    height: 260px;
+    float: left;
+    margin-left: 183px;
+}
