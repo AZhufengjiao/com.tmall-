@@ -5,7 +5,6 @@
 
 body {
     font-family: 'microsoft yahei';
-    overflow: hidden;
     background: #fff;
 }
 
@@ -109,8 +108,8 @@ li {
 
 .cat_wrap .cat_list div li {
     float: left;
-    color: #323232;
-    font-size: 14px;
+    color: #666666;
+    font-size: 13px;
     margin: 7px 0px;
 }
 
@@ -134,44 +133,53 @@ li {
 
 /*banner浮层滑动显示弹框*/
 .cat_subcont {
-    display: none;
+    /* display: none; */
 }
 
 .cat_subcont.active {
     display: block;
 }
 
+.fore_list {
+    float: left;
+}
+
 .cat_subcont .cat_sublist {
+    float: left;
     position: absolute;
     z-index: 998;
     top: -1px;
     left: 182px;
-    height: 443px;
+    height: 447px;
     padding-top: 5px;
     min-height: 394px;
-    width: 740px;
+    width: 640px;
     background: #fff;
     border: 2px solid #f94a14;
 }
 
 .cat_subcont .cat_sublist .fore1 {
-    width: 552px;
+    width: 434px;
     float: left;
+    height: 100%;
     border-right: 1px solid #f4f4f4;
 }
 
 .cat_subcont .cat_sublist .fore1 .fore_list {
     padding: 0 20px;
+    height: 33.333%;
 }
 
 .cat_subcont .cat_sublist .fore1 .fore_list h3 {
     padding: 5px;
-    border-bottom: 1px solid #d3d3d3;
+    /* padding-top: 17px; */
+    line-height: 2;
+    margin-top: 4px;
 }
 
 .cat_subcont .cat_sublist .fore1 .fore_list h3 a {
-    font-size: 14px;
-    color: #00a1ea;
+    /* font-size: 14px; */
+
 }
 
 .cat_subcont .cat_sublist .fore1 .fore_list li {
@@ -181,10 +189,93 @@ li {
 
 .cat_subcont .cat_sublist .fore1 .fore_list li a {
     font-size: 12px;
-    color: #333;
+    /* color: #333; */
 }
 
 .cat_subcont .cat_sublist .fore1 .fore_list li a:hover {
-    color: #00a1ea;
-    text-decoration: underline;
+    /* color: #00a1ea; */
+    /* text-decoration: underline; */
+}
+
+.fore_list h3 a:nth-child(2) {
+    font-weight: 500;
+    float: right;
+    font-size: 12px;
+    color: #3c3c3c;
+}
+
+.fore_list h3 a:nth-child(1) {
+    float: left;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3c3c3c;
+}
+
+.fore_list h3 a:hover {
+    color: #ff5000;
+}
+
+.fore_list ul li a {
+    color: #666666;
+}
+
+.fore_list ul li a.colorc {
+    color: #ff5000;
+}
+
+.fore_list-right {
+    float: left;
+    height: 445px;
+}
+
+.fore_list-right h3 {
+    line-height: 2;
+    padding-left: 107px;
+    margin-top: 11px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fore_list-right a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #4f4f4f;
+}
+
+.fore_list-right a img {
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+.fore_list-right a img:hover {
+    opacity: .8;
+}
+
+.fore_list-right p {
+    line-height: 2.3;
+    height: 30px;
+    width: 126px;
+    color: #999999;
+    font-size: 13px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.fore_list-right p:hover {
+    color: #ff5000;
+}
+
+.float ul {
+    position: relative;
+}
+
+.float ul i {
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    top: 8px;
+    color: #92b6e6;
+    transform: rotate(269deg);
 }
