@@ -1046,6 +1046,7 @@ html {
     background: #fff;
     padding-top: 10px;
     padding-left: 10px;
+    margin-right: 10px;
     box-sizing: border-box;
 }
 
@@ -1053,8 +1054,8 @@ html {
     float: right;
     width: 49.5%;
     background: #fff;
-    margin-right: 10px;
     padding-top: 10px;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 
@@ -1074,7 +1075,7 @@ html {
     color: #999;
     float: right;
     margin-top: 8px;
-    margin-left: 4px;
+    margin-left: 9px;
     font-size: 12px;
 }
 
@@ -1158,4 +1159,78 @@ html {
     font-size: 12px;
     margin: 8px;
     margin-left: 41px;
+}
+
+.gStuffLeftB li:hover p {
+    color: #ff4400;
+}
+
+.gStuffLeftB li:hover h3 {
+    color: #ff5000;
+}
+
+.gStuffLeftT {
+    position: relative;
+}
+
+.gStuffLeftT s {
+    position: absolute;
+    top: 14px;
+    font-size: 13px;
+    color: #999999;
+    right: -389px;
+}
+
+/* 第六行 脱发广告 */
+.tuofa a {
+    display: inline-block;
+    width: 1190px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+/* 第七行 好店 直播 */
+.live {
+    margin-top: 10px;
+}
+
+.liveLeft {
+    float: left;
+    background: #fff;
+    width: 49.5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.liveLeft-T img {
+    height: 24px;
+}
+
+.liveTa1 {
+    float: left;
+}
+
+.liveLeft-T p {
+    color: #b8b8b8;
+    font-size: 13px;
+    line-height: 2.1;
+    margin-left: 92px;
+}
+
+.liveLeft-T {
+    position: relative;
+}
+
+.liveLeft-T span {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    font-size: 13px;
+    color: #b8b8b8;
+}
+
+.liveR {
+    float: right;
+    background: #fff;
+    width: 49.5%;
 }

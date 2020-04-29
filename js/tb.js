@@ -76,10 +76,14 @@ $(function () {
     //     $(".hideDov ").hide()
     // })
 
+    // 经过第五行图片。图片颜色变暗
     console.log($(".agjImgxx"))
     $(".agjImgxx").hover(
         function () {
-
+            $(this).css("opacity", ".8")
+        },
+        function () {
+            $(this).css("opacity", ".9")
         }
     )
 
