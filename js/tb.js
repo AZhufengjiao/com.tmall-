@@ -44,12 +44,43 @@ $(function () {
     // 循环轮播图右边的精灵图
     $(".registerCenter ul li").each(function (index, item) {
         let indexss = -index * 44
-        console.log(indexss)
-        console.log($(this).find("span"))
         $(this).find("span").css({
             "backgroundPosition": `0 ${indexss}px`
         })
     })
 
+    // 
+    $(".registerBottm li").hover(
+        function () {
+            $(".hide-div").hide()
+            $(this).find(".hide-div").show()
+        },
+        function () {
+            $(this).find(".hide-div").hide()
+        }
+    )
+
+    // $(".registerCenter ul li").hover(
+    //     function () {
+    //         $(".hideDov").show()
+    //         $(".hideDov li").css({
+    //             border: `none`
+    //         })
+    //         $(".registerCenter ul li").removeClass("colors")
+    //         $(this).addClass("colors")
+
+    //     }
+    // )
+
+    // $(".hideDov i").on("click", function () {
+    //     $(".hideDov ").hide()
+    // })
+
+    console.log($(".agjImgxx"))
+    $(".agjImgxx").hover(
+        function () {
+
+        }
+    )
 
 })

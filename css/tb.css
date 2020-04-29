@@ -889,11 +889,81 @@ html {
 }
 
 .registerCenter li {
+    position: relative;
     float: left;
     width: 24%;
     padding: 10px 0px;
     border-top: 1px solid #f4f4f4;
     border-left: 1px solid #f4f4f4;
+}
+
+.hideDov {
+    display: none;
+    position: absolute;
+    top: 64px;
+    width: 267px;
+    background: #fff;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid #ff4f0f;
+    padding-bottom: 10px;
+    z-index: 10;
+}
+
+.hideDov i {
+    position: absolute;
+    right: 0;
+    color: #a5a39f;
+}
+
+.registerCenter ul li.colors {
+    border: 1px solid #ff672f;
+    border-bottom: 1px solid transparent;
+}
+
+.registerCenter ul li .hideDov a {
+    height: 13px;
+}
+
+.hideDov h3 {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    background: #ff4400;
+}
+
+.hideDov input {
+    width: 138px;
+    color: #d2d2d2;
+}
+
+.hideDov input.input2 {
+    color: #0f0f0f;
+}
+
+.hideDov li {
+    float: left;
+    border: none;
+    color: #666666;
+    font-size: 13px;
+    text-align: center;
+}
+
+.registerCenter ul .hideDov p {
+    color: #666666;
+    margin: 6px 0;
+}
+
+.registerCenter ul .hideDov p s {
+    color: #a4a5a5;
+    font-size: 11px;
+}
+
+.registerCenter ul .hideDov p b {
+    color: #ff6600;
 }
 
 .registerCenter li p {
@@ -916,6 +986,7 @@ html {
 }
 
 .registerBottm ul li {
+    position: relative;
     float: left;
     margin-right: 17px;
 }
@@ -947,4 +1018,144 @@ html {
 
 .registerBottm ul {
     padding-left: 16px;
+}
+
+.hide-div {
+    display: none;
+    position: absolute;
+    top: -129px;
+    left: -33px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #dedede;
+}
+
+.hide-div p {
+    color: #666666;
+    font-size: 12px;
+}
+
+/* 第五行 有好货 */
+.gStuff {
+    margin-top: 10px;
+}
+
+.gStuffLeft {
+    float: left;
+    width: 49.5%;
+    background: #fff;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.gStuffRight {
+    float: right;
+    width: 49.5%;
+    background: #fff;
+    margin-right: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.gStuffLeftT {
+    float: left;
+}
+
+.gStuffLeftT img {
+    height: 24px;
+}
+
+.gStuffLeftT i {
+    color: #cccccc;
+}
+
+.gStuffLeftT span {
+    color: #999;
+    float: right;
+    margin-top: 8px;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.gStuffLeftB {
+    float: left;
+    margin-top: 16px;
+}
+
+.gStuffLeftB a {
+    width: 180px;
+    display: inline-block;
+}
+
+.gStuffLeftB div {
+    height: 180px;
+    background: #4f4f4f;
+}
+
+.gStuffLeftB img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    opacity: .9;
+}
+
+.gStuffLeftB li {
+    position: relative;
+    float: left;
+    margin: 0 4px 17px 0;
+}
+
+.gStuffLeftB li p {
+    color: #3C3C3C;
+    font-size: 13px;
+    margin-left: 5px;
+    height: 24px;
+    line-height: 1.6;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.gStuffLeftB li h2 {
+    height: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #999999;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.gStuffLeftB li span {
+    margin-left: 4px;
+    color: #35b1ff;
+    font-size: 13px;
+}
+
+.gStuffLeftB h3 {
+    height: 42px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 500;
+    color: #999999;
+    line-height: 1.5;
+    padding: 0 0 0 4px;
+    margin-top: 10px;
+}
+
+.gStuffLeftB ul li .agjImg {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    bottom: 3px;
+    left: 10px;
+}
+
+.gStuffLeftB s {
+    color: #999;
+    display: inline-block;
+    font-size: 12px;
+    margin: 8px;
+    margin-left: 41px;
 }
