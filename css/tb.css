@@ -578,7 +578,373 @@ html {
 /* 第一个轮播 */
 #box {
     width: 543px;
-    height: 260px;
+    height: 248px;
+    margin-top: 12px;
     float: left;
-    margin-left: 183px;
+    margin-left: 199px
+}
+
+
+/* lunbotu2  */
+.swiper-container {
+    position: relative;
+}
+
+.swiper-slide ul {
+    width: 529px;
+    height: 167px;
+}
+
+.swiper-slide ul li {
+    float: left;
+    width: 25%;
+    height: 33.333%;
+}
+
+.swiper-slide ul li a {
+    width: 132px;
+    height: 56px;
+    display: inline-block;
+    border-bottom: 1px solid #ededed;
+    padding: 12px 18px;
+    border-right: 1px solid #ededed;
+    box-sizing: border-box;
+}
+
+.swiper-slide ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-box {
+    padding: 12px 4px;
+    width: 529px;
+    height: 167px;
+    box-sizing: border-box;
+}
+
+.swiper-slide-box a {
+    display: inline-block;
+    height: 144px;
+    width: 256px;
+}
+
+.swiper-slide-box a img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-xx {
+    padding: 9px 4px;
+}
+
+.box-xx a {
+    height: 153px;
+}
+
+.lunbozimg {
+    position: absolute;
+    top: 302px;
+    left: 197px;
+    width: 528px;
+    height: 23px;
+}
+
+.slideshow .container {
+    position: relative;
+}
+
+.lunbozimg b {
+    float: right;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.lunbozimg span {
+    float: right;
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #3c3c3c;
+    margin-right: 285px;
+    color: #666666;
+}
+
+.lunbozimg b s {
+    color: #ff1648;
+}
+
+.idBoxRight1 {
+    width: 160px;
+    height: 248px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.lunboRight img {
+    width: 100%;
+    height: 100%;
+}
+
+.lunboRight {
+    position: absolute;
+    top: 33px;
+    right: 278px;
+    width: 160px;
+}
+
+.idBoxRight2 {
+    width: 160px;
+    height: 166px;
+    display: inline-block;
+}
+
+.lunboRight span {
+    color: #a1a1a1;
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+.register {
+    position: absolute;
+    width: 268px;
+    height: 447px;
+    margin-top: 10px;
+    background: #fff;
+    right: 0;
+}
+
+.registerTop img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.registerTopT {
+    width: 50px;
+    margin: auto;
+    margin-top: 7px;
+    height: 50px;
+}
+
+.registerTop p {
+    color: #404040;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.registerTop h3 {
+    padding-left: 27px;
+    margin-top: 4px;
+}
+
+.registerTop h3 a {
+    position: relative;
+    background-color: #ffe4db;
+    display: inline-block;
+    color: #ff5407;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 5px;
+    border-radius: 12px;
+    padding: 1px 10px 1px 19px;
+}
+
+.registerTop h3 a i {
+    position: absolute;
+    width: 25px;
+    left: 1px;
+    height: 20px;
+    background: url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position: 0px -461px;
+}
+
+.registerTop h4 a {
+    display: inline-block;
+    background: linear-gradient(to right, #ff5000 0, #ff6f06);
+    width: 72px;
+    height: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.registerTop h4 {
+    padding-left: 22px;
+    margin-top: 9px;
+    margin-bottom: 12px;
+}
+
+.registerTop h5 {
+    position: relative;
+    background: #ffe4dd;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.registerTop h5::after {
+    position: absolute;
+    content: "";
+    right: 30px;
+    top: 4px;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #ff4400;
+}
+
+.registerTop h5 a {
+    color: #ff4d0c;
+    font-size: 12px;
+}
+
+.registerTop ul {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.registerTop li {
+
+    float: left;
+    padding-right: 20px;
+}
+
+.registerTop li a {
+    padding: 2px;
+    color: #3c3c3c;
+    font-size: 12px;
+}
+
+.registerTop li div {
+    position: absolute;
+    top: 28px;
+    left: 12px;
+    width: 241px;
+}
+
+.registerTop li a.borders {
+    border-bottom: 1px solid #ff4400;
+    font-weight: 600;
+}
+
+.topA:hover {
+    font-size: 13px;
+    color: #ff4400;
+}
+
+.register ul li div a {
+    display: inline-block;
+    padding: 2px;
+    width: 46%;
+    height: 9px;
+    color: #3c3c3c;
+    line-height: 1.3;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.hid {
+    display: none;
+}
+
+.register ul li div a:hover {
+    color: #ff5101;
+}
+
+.register ul li .newa {
+    display: block;
+    color: #ff5101;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.register ul li div a.c {
+    color: #ff5101;
+}
+
+/* 中 */
+.registerCenter {
+    margin-top: 55px;
+}
+
+.registerCenter a {
+    display: inline-block;
+    width: 66px;
+    height: 15px;
+    text-align: center;
+}
+
+.registerCenter ul {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 10px;
+}
+
+.registerCenter li {
+    float: left;
+    width: 24%;
+    padding: 10px 0px;
+    border-top: 1px solid #f4f4f4;
+    border-left: 1px solid #f4f4f4;
+}
+
+.registerCenter li p {
+    color: #383838;
+    font-size: 12px;
+}
+
+.registerCenter li span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/tb/registerJb.png);
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+
+/* 下 */
+.registerBottm ul {
+    margin-top: 10px;
+}
+
+.registerBottm ul li {
+    float: left;
+    margin-right: 17px;
+}
+
+.registerBottm li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.registerBottm a img {
+    width: 100%;
+    height: 100%;
+}
+
+.registerBottm span {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+.registerBottm b {
+    float: right;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #3c3c3c;
+}
+
+.registerBottm ul {
+    padding-left: 16px;
 }

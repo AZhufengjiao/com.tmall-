@@ -26,7 +26,30 @@ $(function () {
         $(".tbInputRight").hide()
     })
 
+    $(".topA").hover(
+        function () {
+            $(".registerTop li a").removeClass("borders")
+            $(this).addClass("borders")
+            // $(this).find("ul>li>div").show().siblings("div").hide()
+        }
+    )
 
+    $(".topA").hover(
+        function () {
+            $(".registerTop ul li div").hide()
+            $(this).next().show()
+        }
+    )
+
+    // 循环轮播图右边的精灵图
+    $(".registerCenter ul li").each(function (index, item) {
+        let indexss = -index * 44
+        console.log(indexss)
+        console.log($(this).find("span"))
+        $(this).find("span").css({
+            "backgroundPosition": `0 ${indexss}px`
+        })
+    })
 
 
 })
