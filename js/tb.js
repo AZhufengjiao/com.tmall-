@@ -77,7 +77,6 @@ $(function () {
     // })
 
     // 经过第五行图片。图片颜色变暗
-    console.log($(".agjImgxx"))
     $(".agjImgxx").hover(
         function () {
             $(this).css("opacity", ".8")
@@ -86,5 +85,67 @@ $(function () {
             $(this).css("opacity", ".9")
         }
     )
+
+    // 定位
+    $(document).on("scroll", function () {
+        let dT = $(this).scrollTop()
+        if (dT > $(".slideshowTop").offset().top) {
+            $(".dwei").show()
+            fn(0)
+        }
+        if (dT > $(".live").offset().top + 200) {
+            fn(1)
+        }
+        if (dT > $(".qualityL").offset().top) {
+            fn(2)
+        }
+        if (dT > $(".best").offset().top) {
+            fn(3)
+        }
+        if (dT > $(".lives").offset().top) {
+            fn(4)
+        }
+
+        // 返回顶部显示
+        if (dT > $(".gStuff").offset().top) {
+            $(".dwei li").eq(5).show()
+
+        }
+
+        // 点击回到顶部
+        $(".dwei li").eq(5).on("click", function () {
+            $("body,html").animate({
+                scrollTop: 0
+            })
+        })
+
+        // 点击回到原位
+        $(".dwei li").eq(0).on("click", function () {
+            $(document).scrollTop($(".slideshowTop").offset().top + 500)
+        })
+
+        $(".dwei li").eq(1).on("click", function () {
+            $(document).scrollTop($(".live").offset().top)
+        })
+        $(".dwei li").eq(2).on("click", function () {
+            $(document).scrollTop($(".qualityL").offset().top)
+        })
+        $(".dwei li").eq(3).on("click", function () {
+            $(document).scrollTop($(".best").offset().top)
+        })
+        $(".dwei li").eq(4).on("click", function () {
+            $(document).scrollTop($(".lives").offset().top)
+        })
+
+        $(".dwei").on("click", "li", function () {
+            $(this).addClass("colorss").siblins("li").removeClass("colorss")
+        })
+
+        function fn(num) {
+            $(".dwei li").removeClass("colorss")
+            $(".dwei li").eq(num).addClass("colorss")
+        }
+
+    })
 
 })
