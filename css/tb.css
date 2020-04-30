@@ -127,6 +127,7 @@ html {
 
 .Tmall-nav-right-ul li {
     position: relative;
+    z-index: 1000;
 }
 
 /* 小三角 */
@@ -177,7 +178,7 @@ html {
 
 .Tmall-nav-right-ul-li-bottom a {
     line-height: 10px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .du1 {
@@ -185,7 +186,7 @@ html {
 }
 
 .du2 {
-    width: 60px;
+    width: 68px;
     z-index: 5;
 }
 
@@ -240,8 +241,8 @@ html {
 }
 
 .du5 {
-    z-index: 5;
-    left: -1110px;
+    z-index: 100;
+    left: -1094px;
     width: 1183px;
     background-color: #fff;
     padding-top: 20px;
@@ -1194,7 +1195,8 @@ html {
     margin-top: 10px;
 }
 
-.liveLeft {
+.liveLeft,
+.liveR {
     float: left;
     background: #fff;
     width: 49.5%;
@@ -1202,19 +1204,22 @@ html {
     box-sizing: border-box;
 }
 
+
 .liveLeft-T img {
     height: 24px;
+    width: 80px;
 }
 
 .liveTa1 {
     float: left;
+    margin-left: 10px;
 }
 
 .liveLeft-T p {
     color: #b8b8b8;
     font-size: 13px;
     line-height: 2.1;
-    margin-left: 92px;
+    margin-left: 100px;
 }
 
 .liveLeft-T {
@@ -1233,4 +1238,65 @@ html {
     float: right;
     background: #fff;
     width: 49.5%;
+}
+
+/* 下 */
+.liveLeft-B a {
+    position: relative;
+    float: left;
+    height: 218px;
+    width: 49.5%;
+    padding: 0 0 0 8px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.liveLeft-B a h4 {
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    color: #fff;
+    padding-left: 34px;
+    font-weight: 500;
+    width: 154px;
+    overflow: hidden;
+    height: 16px;
+    font-size: 13px;
+}
+
+.liveLeft-B p {
+    color: #3f3f3f;
+    font-size: 13px;
+    height: 15px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.liveLeft-B li:hover p {
+    color: #ff5000;
+}
+
+.liveLeft-B p span {
+    color: #b6b6b6;
+    margin-left: 11px;
+}
+
+.haodianH {
+    float: left;
+    background: #4f4f4f;
+}
+
+.haodianR {
+    width: 88px;
+    height: 89px;
+}
+
+.haodianH img {
+    opacity: .9;
+}
+
+.haodianH img:hover {
+    opacity: .8;
 }
