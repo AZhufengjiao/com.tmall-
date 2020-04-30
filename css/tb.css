@@ -1199,7 +1199,7 @@ html {
 .liveR {
     float: left;
     background: #fff;
-    width: 49.5%;
+    width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -1299,4 +1299,397 @@ html {
 
 .haodianH img:hover {
     opacity: .8;
+}
+
+/* 第八行 时尚爆料王 */
+.fashion {
+    margin-top: 10px;
+}
+
+.fashionT {
+    width: 853px;
+    height: 256px;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+}
+
+.fashionT h1 {
+    margin: 10px 0 10px 15px;
+    color: #ad45df;
+    font-size: 16px;
+    padding-left: 8px;
+    border-left: 3px solid #8558d6;
+    font-weight: 600;
+}
+
+.fashionT h1 span {
+    font-size: 17px;
+}
+
+.fashionT li {
+    width: 33.333%;
+    padding: 25px 0 0 20px;
+    float: left;
+    border-top: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+    padding-bottom: 27px;
+    box-sizing: border-box;
+}
+
+.fashionT li:hover {
+    border: 1px solid #ff5000;
+}
+
+.fashionT li h3 a {
+    color: #3C3C3C;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fashionT li p {
+    color: #999999;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.fashionA {
+    display: inline-block;
+}
+
+.shishangR {
+    border: 1px solid #fff;
+    padding: 20px;
+    background: #fff;
+    float: left;
+    height: 214px;
+    overflow: hidden;
+}
+
+.shishangR:hover {
+    border: 1px solid #ff5000;
+}
+
+.shishangR a {
+    width: 285px;
+    height: 214px;
+    display: inline-block;
+}
+
+.shishangR img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 第九行 品质生活 */
+.qualityL {
+    background: #fff;
+    padding: 11px 0 0 1px;
+    margin-top: 10px;
+    float: left;
+    width: 589px;
+    margin-right: 10px;
+}
+
+.qualityL h1 {
+    margin: 10px 0 10px 15px;
+    color: #28abff;
+    font-size: 18px;
+    padding-left: 8px;
+    border-left: 3px solid #28abff;
+    font-weight: 500;
+}
+
+.qualityL-L {
+    float: left;
+    width: 50%;
+}
+
+.qualityL-L-T,
+.qualityL-L li {
+    padding: 18px;
+}
+
+.qualityL-L-T a {
+    display: block;
+    height: 317px;
+    width: 254px;
+
+}
+
+.qualityL-L ul li a {
+    display: block;
+}
+
+.mmL {
+    float: left;
+    margin: 10px 0 0 16px;
+}
+
+.mmL p {
+    color: #544368;
+    margin: 21px 0 0 0px;
+}
+
+.mmL h2 {
+    color: #999;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.qualityL-L-T {
+    border: 1px solid transparent;
+    border-top: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+.qualityL-L-T:hover {
+    border: 1px solid #ff5000;
+}
+
+.mmR {
+    margin-left: 140px;
+}
+
+.qualityL-L ul li {
+    border: 1px solid transparent;
+    border-top: 1px solid #f4f4f4;
+    border-right: 1px solid #f4f4f4;
+}
+
+.qualityL-L ul li:hover {
+    border: 1px solid #ff5000;
+}
+
+.qualityL-R {
+    width: 50%;
+    float: left;
+}
+
+.qualityL-R ul {
+    height: 780px;
+}
+
+.qualityL-R li {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #f4f4f4;
+    height: 33.33333%;
+    padding: 30px 19px;
+    box-sizing: border-box;
+}
+
+.qualityL-R li:hover {
+    border: 1px solid #ff5000;
+}
+
+.qualityL-R li a {
+    display: block;
+}
+
+.qualityL-R p {
+    color: #333354;
+    font-size: 15px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+.qualityL-R span {
+    color: #999999;
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+.qualityR {
+    margin-right: 0;
+}
+
+.qualityR h1 {
+    color: #ff5000;
+    border-left: 3px solid #ff5000;
+}
+
+/* 第十行 实惠专业户 */
+.material {
+    margin-top: 10px;
+}
+
+.material .container {
+    background: #fff;
+    overflow: hidden;
+}
+
+.material h1 {
+    margin: 10px 0 10px 15px;
+    color: #31ba9b;
+    font-size: 18px;
+    padding-left: 8px;
+    border-left: 3px solid #31ba98;
+    font-weight: 500;
+}
+
+.material ul li {
+    border: 1px solid transparent;
+    width: 20%;
+    float: left;
+    padding: 20px 4px 0 20px;
+    box-sizing: border-box;
+}
+
+.material ul li:hover {
+    border: 1px solid #ff5000;
+    border-bottom: 1px solid transparent;
+}
+
+.material ul li p {
+    color: #3c3c48;
+    margin-left: 2px;
+}
+
+.material ul li a {
+    display: block;
+}
+
+.material li img {
+    width: 120px;
+    float: left;
+    height: 120px;
+}
+
+.material li div {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.material li div span {
+    display: block;
+    color: #394375;
+    line-height: 1.8;
+}
+
+.material li div s {
+    display: block;
+    color: #999999;
+    font-size: 13px;
+}
+
+.material li div b {
+    display: block;
+    margin-top: 19px;
+    color: #ff5000;
+    font-weight: 500;
+    border: 1px solid;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-left: 5px;
+
+}
+
+/* 第十一行 热卖单品 */
+.best {
+    margin-top: 10px;
+}
+
+.best .container {
+    background: #fff;
+    overflow: hidden;
+}
+
+.best h1 {
+    margin: 10px 0 10px 15px;
+    color: #ff5500;
+    font-size: 18px;
+    padding-left: 8px;
+    border-left: 3px solid #ff4420;
+    font-weight: 500;
+}
+
+.select ul {
+    padding-left: 18px;
+    margin-bottom: 14px;
+}
+
+.select li {
+    float: left;
+    margin-right: 8px;
+}
+
+.select li a {
+    color: #999999;
+}
+
+.select li a:hover {
+    color: #ff5000;
+}
+
+.select ul span {
+    color: #dcdcdc;
+    font-size: 10px;
+    padding: 2px 4px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-left: 78px;
+}
+
+.uls li {
+    float: left;
+    width: 20%;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.uls li:hover {
+    border: 1px solid #ff5000;
+}
+
+.uls li span:hover {
+    text-decoration: none;
+}
+
+.uls li img {
+    width: 197px;
+    height: 197px;
+}
+
+.uls li p {
+    color: #666666;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+
+.uls li h3 {
+    color: #999999;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.5;
+}
+
+.uls li i {
+    color: #ff5000;
+    font-size: 12px;
+}
+
+
+.uls li s {
+    color: #ff5839;
+    font-size: 17px;
+}
+
+.uls li span {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.uls li b {
+    margin-left: 80px;
+    color: #999999;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.uls h6 {
+    border-top: 1px solid #f4f4f4;
 }
