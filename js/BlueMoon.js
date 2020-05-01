@@ -1,9 +1,9 @@
 $(function () {
     // 点击关闭 遮罩层消失
-    $(".shadeDiv").on("click", "s", function () {
-        $(".shadeDiv").hide()
-        $(".shade").hide()
-    })
+    // $(".shadeDiv").on("click", "s", function () {
+    //     $(".shadeDiv").hide()
+    //     $(".shade").hide()
+    // })
 
     // 首部导航栏经过，隐藏部分显示
     $(".Tmall-nav-right-ul li").hover(

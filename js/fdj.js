@@ -1,44 +1,43 @@
-;
-(function ($, window) {
+;(function ($, window) {
     let ele = null,
         exzoom_img_box = null,
         boxWidth = null,
         boxHeight = null,
-        exzoom_img_ul_outer = null, //用于限制 ul 宽度,又不影响放大镜区域
+        exzoom_img_ul_outer = null,//用于限制 ul 宽度,又不影响放大镜区域
         exzoom_img_ul = null,
-        exzoom_img_ul_position = 0, //循环图片区域的边距,用于移动时跟随光标
-        exzoom_img_ul_width = 0, //循环图片区域的最大宽度
-        exzoom_img_ul_max_margin = 0, //循环图片区域的最大外边距,应该是图片数量减一乘以boxWidth
+        exzoom_img_ul_position = 0,//循环图片区域的边距,用于移动时跟随光标
+        exzoom_img_ul_width = 0,//循环图片区域的最大宽度
+        exzoom_img_ul_max_margin = 0,//循环图片区域的最大外边距,应该是图片数量减一乘以boxWidth
         exzoom_nav = null,
         exzoom_nav_inner = null,
-        navHightClass = "current", //当前图片的类,
+        navHightClass = "current",//当前图片的类,
         exzoom_navSpan = null,
         navHeightWithBorder = null,
         images = null,
-        exzoom_prev_btn = null, //导航上一张图片
-        exzoom_next_btn = null, //导航下一张图片
-        imgNum = 0, //图片的数量
-        imgIndex = 0, //当前图片的索引
-        imgArr = [], //图片属性的数字
+        exzoom_prev_btn = null,//导航上一张图片
+        exzoom_next_btn = null,//导航下一张图片
+        imgNum = 0,//图片的数量
+        imgIndex = 0,//当前图片的索引
+        imgArr = [],//图片属性的数字
         exzoom_zoom = null,
         exzoom_main_img = null,
         exzoom_zoom_outer = null,
-        exzoom_preview = null, //预览区域
-        exzoom_preview_img = null, //预览区域的图片
-        autoPlayInterval = null, //用于控制自动播放的间隔时间
-        startX = 0, //移动光标的起始坐标
-        startY = 0, //移动光标的起始坐标
-        endX = 0, //移动光标的终止坐标
-        endY = 0, //移动光标的终止坐标
-        g = {}, //全局变量
+        exzoom_preview = null,//预览区域
+        exzoom_preview_img = null,//预览区域的图片
+        autoPlayInterval = null,//用于控制自动播放的间隔时间
+        startX = 0,//移动光标的起始坐标
+        startY = 0,//移动光标的起始坐标
+        endX = 0,//移动光标的终止坐标
+        endY = 0,//移动光标的终止坐标
+        g = {},//全局变量
         defaults = {
-            "navWidth": 60, //列表每个宽度,该版本中请把宽高填写成一样
-            "navHeight": 60, //列表每个高度,该版本中请把宽高填写成一样
-            "navItemNum": 5, //列表显示个数
-            "navItemMargin": 7, //列表间隔
-            "navBorder": 1, //列表边框，没有边框填写0，边框在css中修改
-            "autoPlay": false, //是否自动播放
-            "autoPlayTimeout": 2000, //播放间隔时间
+            "navWidth": 60,//列表每个宽度,该版本中请把宽高填写成一样
+            "navHeight": 60,//列表每个高度,该版本中请把宽高填写成一样
+            "navItemNum": 5,//列表显示个数
+            "navItemMargin": 7,//列表间隔
+            "navBorder": 1,//列表边框，没有边框填写0，边框在css中修改
+            "autoPlay": true,//是否自动播放
+            "autoPlayTimeout": 2000,//播放间隔时间
         };
 
 
@@ -50,11 +49,11 @@
             exzoom_img_box = ele.find(".exzoom_img_box");
             exzoom_img_ul = ele.find(".exzoom_img_ul");
             exzoom_nav = ele.find(".exzoom_nav");
-            exzoom_prev_btn = ele.find(".exzoom_prev_btn"); //缩略图导航上一张按钮
-            exzoom_next_btn = ele.find(".exzoom_next_btn"); //缩略图导航下一张按钮
+            exzoom_prev_btn = ele.find(".exzoom_prev_btn");//缩略图导航上一张按钮
+            exzoom_next_btn = ele.find(".exzoom_next_btn");//缩略图导航下一张按钮
 
             //todo 以后可以分开宽度和高度的限制
-            boxHeight = boxWidth = ele.outerWidth(); //在小屏幕中,有 padding 的情况下,计算不准,需要手动指定 ele 的宽度
+            boxHeight = boxWidth = ele.outerWidth();  //在小屏幕中,有 padding 的情况下,计算不准,需要手动指定 ele 的宽度
 
             // console.log("boxWidth::" + boxWidth);
             // console.log("ele.parent().width()::" + ele.parent().width());
@@ -71,16 +70,16 @@
             g.autoPlayTimeout = opts.autoPlayTimeout;
 
             images = exzoom_img_box.find("img");
-            imgNum = images.length; //图片的数量
-            checkLoadedAllImages(images) //检查图片是否健在完成,全部加载完成的会执行初始化
+            imgNum = images.length;//图片的数量
+            checkLoadedAllImages(images)//检查图片是否健在完成,全部加载完成的会执行初始化
         },
-        prev: function () { //上一张图片
+        prev: function () {             //上一张图片
             moveLeft()
         },
-        next: function () { //下一张图片
+        next: function () {            //下一张图片
             moveRight();
         },
-        setImg: function () { //设置大图
+        setImg: function () {            //设置大图
             let url = arguments[0];
 
             getImageSize(url, function (width, height) {
@@ -133,10 +132,10 @@
 
         //循环所有图片,计算尺寸,添加缩略图导航
         for (let i = 0; i < imgNum; i++) {
-            imgArr[i] = copute_image_prop(images.eq(i)); //记录图片的尺寸属性等
+            imgArr[i] = copute_image_prop(images.eq(i));//记录图片的尺寸属性等
             console.log(imgArr[i]);
             let li = exzoom_img_ul.find("li").eq(i);
-            li.css("width", boxWidth); //设置图片上级的 li 元素的宽度
+            li.css("width", boxWidth);//设置图片上级的 li 元素的宽度
             li.find("img").css({
                 "margin-top": imgArr[i][5],
                 "width": imgArr[i][3]
@@ -196,12 +195,12 @@
         exzoom_preview.css({
             "width": boxHeight + "px",
             "height": boxHeight + "px",
-            "left": boxHeight + 5 + "px", //添加个边距
+            "left": boxHeight + 5 + "px",//添加个边距
         });
 
         previewImg(imgArr[imgIndex]);
-        autoPlay(); //自动播放
-        bindingEvent(); //绑定事件
+        autoPlay();//自动播放
+        bindingEvent();//绑定事件
     }
 
     /**
@@ -230,8 +229,8 @@
     function getCursorCoords(event) {
         let e = event || window.event;
         let coords_data = e, //记录坐标的数据,默认为 event 本身,移动端的 touch 会修改
-            x, //x 轴
-            y; //y 轴
+            x,//x 轴
+            y;//y 轴
 
         if (e["touches"] !== undefined) {
             if (e["touches"].length > 0) {
@@ -242,10 +241,7 @@
         x = coords_data.clientX || coords_data.pageX;
         y = coords_data.clientY || coords_data.pageY;
 
-        return {
-            'x': x,
-            'y': y
-        }
+        return {'x': x, 'y': y}
     }
 
     /**
@@ -255,7 +251,7 @@
         if (-new_position > exzoom_img_ul_max_margin) {
             //限制向右的范围
             new_position = -exzoom_img_ul_max_margin;
-            imgIndex = 0; //向右超出范围的回到第一个
+            imgIndex = 0;//向右超出范围的回到第一个
         } else if (new_position > 0) {
             //限制向左的范围
             new_position = 0;
@@ -276,7 +272,7 @@
             let left = exzoom_img_ul.css("left");
             exzoom_img_ul_position = parseInt(left);
 
-            window.clearInterval(autoPlayInterval); //停止自动播放
+            window.clearInterval(autoPlayInterval);//停止自动播放
         });
 
         //移动端大图区域的 touchmove 事件
@@ -305,7 +301,7 @@
                 moveLeft();
             }
 
-            autoPlay(); //恢复自动播放
+            autoPlay();//恢复自动播放
         });
 
         //大屏幕在放大区域点击,判断向左还是向右移动
@@ -332,11 +328,11 @@
 
         //进入 exzoom 停止自动播放
         ele.on("mouseenter", function () {
-            window.clearInterval(autoPlayInterval); //停止自动播放
+            window.clearInterval(autoPlayInterval);//停止自动播放
         });
         //离开 exzoom 开始自动播放
         ele.on("mouseleave", function () {
-            autoPlay(); //恢复自动播放
+            autoPlay();//恢复自动播放
         });
 
         //大屏幕进入大图区域
@@ -367,10 +363,7 @@
             if (current_Y >= max_Y) {
                 move_Y = max_Y - width_limit;
             }
-            exzoom_zoom.css({
-                "left": move_X + "px",
-                "top": move_Y + "px"
-            });
+            exzoom_zoom.css({"left": move_X + "px", "top": move_Y + "px"});
 
             exzoom_preview_img.css({
                 "left": -move_X * exzoom_preview.width() / exzoom_zoom.width() + "px",
@@ -428,7 +421,7 @@
         //直接对比当前索引的图片占据的宽度和exzoom的宽度的差作为偏移量即可
         let temp = nav_item_width * (imgIndex + 1);
         if (temp > exzoom_nav_width) {
-            new_nav_offset = boxWidth - temp;
+            new_nav_offset =  boxWidth - temp;
         }
 
         exzoom_nav_inner.css({
@@ -439,9 +432,7 @@
         let new_position = -boxWidth * imgIndex;
         //在 animate 方法前先调用 stop() ,避免反应迟钝
         new_position = checkNewPositionLimit(new_position);
-        exzoom_img_ul.stop().animate({
-            "left": new_position
-        }, 500);
+        exzoom_img_ul.stop().animate({"left": new_position}, 500);
         //处理放大区域
         previewImg(imgArr[imgIndex]);
     }
@@ -450,7 +441,7 @@
      * 导航向右
      */
     function moveRight() {
-        imgIndex++; //先增加 index,后面判断范围
+        imgIndex++;//先增加 index,后面判断范围
         if (imgIndex > imgNum) {
             imgIndex = imgNum;
         }
@@ -461,7 +452,7 @@
      * 导航向左
      */
     function moveLeft() {
-        imgIndex--; //先减少 index,后面判断范围
+        imgIndex--;//先减少 index,后面判断范围
         if (imgIndex < 0) {
             imgIndex = 0;
         }
@@ -567,31 +558,31 @@
         let img_scale = res[1] / res[2];
 
         if (img_scale === 1) {
-            res[3] = boxHeight; //width
-            res[4] = boxHeight; //height
-            res[5] = 0; //top
-            res[6] = 0; //left
+            res[3] = boxHeight;//width
+            res[4] = boxHeight;//height
+            res[5] = 0;//top
+            res[6] = 0;//left
             res[7] = boxHeight / 2;
-            res[8] = boxHeight * 2; //width
-            res[9] = boxHeight * 2; //height
+            res[8] = boxHeight * 2;//width
+            res[9] = boxHeight * 2;//height
             exzoom_nav_inner.append(`<span><img src="${src}" width="${g.navWidth }" height="${g.navHeight }"/></span>`);
         } else if (img_scale > 1) {
-            res[3] = boxHeight; //width
+            res[3] = boxHeight;//width
             res[4] = boxHeight / img_scale;
             res[5] = (boxHeight - res[4]) / 2;
-            res[6] = 0; //left
+            res[6] = 0;//left
             res[7] = res[4] / 2;
-            res[8] = boxHeight * 2 * img_scale; //width
-            res[9] = boxHeight * 2; //height
+            res[8] = boxHeight * 2 * img_scale;//width
+            res[9] = boxHeight * 2;//height
             let top = (g.navHeight - (g.navWidth / img_scale)) / 2;
             exzoom_nav_inner.append(`<span><img src="${src}" width="${g.navWidth }" style='top:${top}px;' /></span>`);
         } else if (img_scale < 1) {
-            res[3] = boxHeight * img_scale; //width
-            res[4] = boxHeight; //height
-            res[5] = 0; //top
+            res[3] = boxHeight * img_scale;//width
+            res[4] = boxHeight;//height
+            res[5] = 0;//top
             res[6] = (boxHeight - res[3]) / 2;
             res[7] = res[3] / 2;
-            res[8] = boxHeight * 2; //width
+            res[8] = boxHeight * 2;//width
             res[9] = boxHeight * 2 / img_scale;
             let top = (g.navWidth - (g.navHeight * img_scale)) / 2;
             exzoom_nav_inner.append(`<span><img src="${src}" height="${g.navHeight}" style="left:${top}px;"/></span>`);
@@ -600,5 +591,5 @@
         return res;
     }
 
-    // 闭包结束     
+// 闭包结束     
 })(jQuery, window);

@@ -7,7 +7,8 @@ html {
 
 #exzoom {
     width: 400px;
-    margin: 50px 0 0 25px;
+    margin: 60px 30px 0 30px;
+    float: left;
 }
 
 .container {
@@ -16,6 +17,7 @@ html {
 }
 
 .shade {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -29,6 +31,7 @@ html {
 
 /* 遮罩层 下的盒子 */
 .shadeDiv {
+    display: none;
     position: absolute;
     width: 420px;
     background-color: #fff;
@@ -934,8 +937,172 @@ header a img {
 }
 
 /* 第六行 放大镜右  */
-.zoomR {}
+.zoomR {
+    float: left;
+    margin-top: 60px;
+}
 
-.zoomR p {}
+.zoomR p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
 
-.zoomR h1 {}
+.zoomR h1 {
+    position: relative;
+    padding: 8px;
+    background-image: url(../images/quality/zoomB.png);
+    background-repeat: no-repeat;
+    font-weight: 600;
+    font-size: 21px;
+    color: #ff0036;
+}
+
+
+.zoomR h1 span {
+    color: #999999;
+    font-weight: 500;
+    margin-right: 60px;
+    font-size: 13px;
+}
+
+.zoomR h1 s {
+    position: absolute;
+    color: #fe0036;
+    font-weight: 500;
+    font-size: 17px;
+    top: 8px;
+    left: 84px;
+}
+
+.zoomR h2 {
+    line-height: 2.2;
+}
+
+.zoomR h2 span {
+    font-size: 12px;
+    color: #999999;
+    margin-right: 38px;
+    margin-left: 8px;
+}
+
+.zoomR h2 i {
+    position: absolute;
+    transform: rotate(90deg);
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    right: 6px;
+    color: #333333;
+    top: -4px;
+}
+
+.zoomR h2 b {
+    font-weight: 500;
+}
+
+.zoomR h2 a {
+    position: relative;
+    color: #333333;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0 20px 0 0;
+}
+
+.zoomR h2 s {
+    color: #666666;
+}
+
+.zoomR h2 em {
+    color: #666666;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.zoomR h3 {
+    position: relative;
+    border-top: 1px dotted #c9c9c9;
+    border-bottom: 1px dotted #c9c9c9;
+    padding: 10px 0;
+}
+
+.zoomR h3 span {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+    color: #999999;
+}
+
+.zoomR h3 b {
+    position: absolute;
+    color: #e5dfda;
+    font-weight: 500;
+}
+
+.zoomR h3 s {
+    color: #ff0036;
+    font-weight: 600;
+}
+
+.zoomR h3 em {
+    color: #228800;
+}
+
+.zoomR h4 {
+    position: relative;
+    padding: 20px 0;
+}
+
+.zoomR h4 span {
+    font-size: 12px;
+    color: #838383;
+    font-weight: 500;
+    margin-right: 38px;
+    margin-left: 8px;
+}
+
+.zoomR h4 input {
+    padding: 8px;
+    padding-left: 3px;
+    width: 26px;
+}
+
+.zoomR h4 button {
+    position: absolute;
+    border: 1px solid #a7a6ab;
+    background: #fff;
+    height: -10px;
+    padding: 7px 9px;
+    line-height: 12px;
+}
+
+.zoomR h4 button i {
+    font-weight: 500;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    font-size: 8px;
+    color: #878787;
+}
+
+.zoomR .btn2 {
+    top: 38px;
+    left: 118px;
+}
+
+.zoomR h4 s {
+    margin-left: 28px;
+    color: #878787;
+}
+
+.zoomR h5 a {
+    display: inline-block;
+    color: #fff;
+    background: #ff0036;
+    padding: 12px 41px;
+    font-size: 16px;
+    margin-left: 75px;
+    margin-top: 2px;
+    font-weight: 500;
+}
