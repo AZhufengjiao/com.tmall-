@@ -1,0 +1,298 @@
+html,
+body {
+    height: 10372px;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1230px;
+    margin: auto;
+}
+
+/* 天猫首部导航 */
+.Tmall-nav {
+    background-color: #f2f2f2;
+    height: 26px;
+    line-height: 26px;
+}
+
+.Tmall-nav-left {
+    float: left;
+}
+
+.Tmall-nav-left i {
+    color: #ff0036;
+    font-size: 13px;
+}
+
+.Tmall-nav a {
+    position: relative;
+    display: inline-block;
+    color: #999999;
+    padding: 0px 21px;
+    font-size: 13px;
+    z-index: 10;
+}
+
+.Tmall-navR a {}
+
+.Tmall-nav-left em {
+    color: #999999;
+    font-weight: 500;
+}
+
+.Tmall-nav a:hover {
+    color: #ff0036;
+    text-decoration: underline;
+}
+
+.Tmall-navR {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    color: #ff0036;
+}
+
+.Tmall-navR i {
+    position: absolute;
+    margin-left: 10px;
+    left: -11px;
+    top: 1px;
+    color: #ff0036;
+}
+
+.Tmall-navR span {
+    display: block;
+    top: 13px;
+    right: 9px;
+    position: absolute;
+    border: 3px solid #bdbdbd;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.Tmall-navRbox:hover .xz {
+    transform: rotate(-180deg);
+    top: 9px;
+}
+
+.Tmall-navRbox {
+    position: relative;
+    float: left;
+    padding: 0px 16px;
+    color: #999999;
+}
+
+.hid {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: -46px;
+}
+
+.hid s {
+    display: block;
+    top: -12px;
+    right: 93px;
+    position: absolute;
+    border: 6px solid #fff;
+    border-top: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.hid2 {
+    display: block;
+    display: none;
+    padding: 25px 0;
+    text-align: center;
+    width: 805px;
+    position: absolute;
+    background: #fff;
+    top: 25px;
+    right: 0px;
+    box-shadow: 0 0 10px #999;
+}
+
+.hid-box {
+    float: left;
+    padding: 0 20px;
+    width: 100px;
+    border-right: 1px solid #eeeeee;
+}
+
+.sj:hover {
+    background-color: #fff;
+}
+
+.hid-box a {
+    position: relative;
+    display: inline-block;
+    color: #6b6b6b;
+    font-size: 13px;
+    padding: 0;
+    float: left;
+    width: 98px;
+}
+
+.wid {
+    width: 200px;
+}
+
+.hid-box p {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+
+.Tmall-nav-left a {
+    padding: 0;
+}
+
+.Tmall-navRbox:hover {
+    color: #ff0036;
+    text-decoration: underline;
+}
+
+/* 第二行 天猫商家 */
+.merchant {
+    background-color: #fff;
+}
+
+.merchant .container {
+    position: relative;
+    padding: 30px 0;
+}
+
+.merchant a:nth-child(1) {
+    color: #ff0036;
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 22px;
+}
+
+.merchant span {
+    position: absolute;
+    top: 38px;
+    left: 110px;
+    font-size: 12px;
+    color: #cccccc;
+    font-weight: 200;
+}
+
+.merchant a:nth-child(2) {
+    color: #ff0036;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* 第三行 品质保障 */
+.safeguard {
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.safeguard a {
+    float: left;
+    color: #999999;
+    margin-right: 20px;
+}
+
+.safeguard a:first-child {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.safeguard a:last-child {
+    float: right;
+    margin-right: 34px;
+    padding: 4px 18px;
+    background: #a6cbe4;
+    color: #fff;
+}
+
+.safeguard a:hover {
+    text-decoration: underline;
+}
+
+/* 第四行 安心购物 */
+.relieved {
+    width: 100%;
+}
+
+.relieved a {
+    display: block;
+}
+
+.relieved a img {
+    width: 100%;
+}
+
+/* 第五行 品质动向  */
+.trend {
+    background: #fff;
+    padding-bottom: 94px;
+}
+
+.trendL {
+    width: 50%;
+    float: left;
+}
+
+.trendR {
+    float: left;
+    width: 50%;
+}
+
+.trend p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 6;
+    text-align: center;
+}
+
+.trend h3 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* 轮播 */
+#box {
+    width: 600px;
+    height: 340px;
+}
+
+/* 右 */
+.trendR h4 {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 36px;
+}
+
+.trendR a {
+    display: block;
+    color: #666666;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.trendR span {
+    background: #f40000;
+    color: #fff;
+    padding: 0 2px;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+/* 第六行 品质有力量 */
+.strength {
+    background: #f5f5f5;
+}
