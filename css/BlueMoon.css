@@ -1001,6 +1001,7 @@ header a img {
     font-weight: 500;
 }
 
+.zoomR h2 s,
 .zoomR h2 a {
     position: relative;
     color: #333333;
@@ -1009,8 +1010,14 @@ header a img {
     padding: 0 20px 0 0;
 }
 
-.zoomR h2 s {
+.zoomR h2 strong {
     color: #666666;
+}
+
+.zoomR h2 s {
+    position: relative;
+    color: #666666;
+    z-index: 10;
 }
 
 .zoomR h2 em {
@@ -1105,4 +1112,147 @@ header a img {
     margin-left: 75px;
     margin-top: 2px;
     font-weight: 500;
+}
+
+.zoomR h6 {
+    position: relative;
+    color: #666;
+    margin-top: 50px;
+}
+
+.zoomR h6 span {
+    font-size: 12px;
+    color: #838383;
+    font-weight: 500;
+    margin-right: 38px;
+    margin-left: 8px;
+}
+
+.zoomR h6 s {
+    color: #886655;
+}
+
+.zoomR h6 p {
+    color: #999999;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 6px;
+    width: 80%;
+    margin-top: 5px;
+}
+
+.zoomR h6 a {
+    top: 18px;
+    right: 39px;
+    position: absolute;
+    color: #757479;
+}
+
+.zoomR h6 a i {
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 10px;
+}
+
+.zoomDB {
+    position: absolute;
+    top: 22px;
+    display: none;
+    left: -75px;
+    height: 300px;
+    background: #fff;
+    width: 570px;
+    border: 1px solid #b9b9b9;
+}
+
+.zoomDB p {
+    display: block;
+    font-size: 12px;
+    margin: 10px 24px;
+    margin-bottom: 0;
+}
+
+.zoom h2 a.zoomDB-foot {
+    position: relative;
+    color: #383434;
+    margin-left: 19px;
+    line-height: 20px;
+    padding-left: 9px;
+    height: 20px;
+    border: 2px solid #ff0036;
+    padding: 2px 6px;
+}
+
+.zoomDB-footB {
+    background: #f2f2f2;
+    padding: 0 4px 0 4px;
+    margin-top: 9px;
+    height: 35px;
+}
+
+.zoom h2 .zoomDB-footB span {
+    position: relative;
+    float: left;
+    margin: 4px 0 0 0;
+    padding: 1px 10px;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    cursor: pointer;
+}
+
+.zoom h2 .zoomDB-footB span.bj {
+    background: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.zoom h2 .zoomDB-footB span:last-child {
+    border-right: 1px solid #d7d7d7;
+}
+
+.zoomDB ul {
+    position: absolute;
+    border: 1px solid #d7d7d7;
+    margin: 0 4px;
+    width: 560px;
+    left: -5px;
+    top: 28px;
+    height: 189px;
+}
+
+.zoomDB ul li {
+    float: left;
+    padding: 0 6px;
+    margin: 4px 18px;
+}
+
+.zoom h2 a.zoomDB-foot i {
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    transform: rotate(0deg);
+    background-image: url(../images/quality/gougou.png);
+}
+
+.zoomDB li.redbj {
+    background: #ff0036;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.zoomDB ul.ul2 {
+    display: none;
+    left: -50px;
+}
+
+.zoomDB ul.ul3 {
+    display: none;
+    left: -95px;
+}
+
+.zoomR h2 i.chahao {
+    font-size: 15px;
 }

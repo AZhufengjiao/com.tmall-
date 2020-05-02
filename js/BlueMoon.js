@@ -130,4 +130,55 @@ $(function () {
         autoPlay: false,
     }); //方法调用，务必在加载完后执行
 
+    // 放大镜右边效果
+    let nums = 1
+    $(".zoomR").on("click", ".btn1", function () {
+        nums++
+        $(".zoomR h4 input").val(nums)
+        $(".zoomR h4 button").css("background", "#fff")
+        $(this).css("background", "#3390ff")
+    })
+
+    $(".zoomR").on("click", ".btn2", function () {
+        nums--
+        if (nums < 0) {
+            nums = 0
+        }
+        $(".zoomR h4 input").val(nums)
+        $(".zoomR h4 button").css("background", "#fff")
+        $(this).css("background", "#3390ff")
+    })
+
+    // 失去焦点
+    $(".zoomR .btn1").on("blur", function () {
+        $(".zoomR h4 button").css("background", "#fff")
+    })
+    $(".zoomR .btn2").on("blur", function () {
+        $(".zoomR h4 button").css("background", "#fff")
+    })
+
+    $(".zoomDB-footB span").on("click", function () {
+        $(this).addClass("bj").siblings("span").removeClass("bj")
+    })
+
+    // 点击
+    $(".zoomDB-footB").on("click", "span", function () {
+        $(".zoomDB-footB span ul").hide()
+        $(this).find("ul").show()
+    })
+
+    $(".zoomDB-footB span ul li").hover(
+        function () {
+            $(this).addClass("redbj").siblings("li").removeClass("redbj")
+        }
+    )
+
+    $(".zoomR h2 s").on("click", function () {
+        $(".zoomDB").show()
+    })
+
+    $(".zoomDB .chahao").on("click", function () {
+        $(".zoomDB").hide()
+        console.log(1)
+    })
 })
