@@ -1256,3 +1256,219 @@ header a img {
 .zoomR h2 i.chahao {
     font-size: 15px;
 }
+
+.zoom .container {
+    position: relative;
+}
+
+.zoomBottom {
+    position: absolute;
+    padding-left: 60px;
+    float: left;
+    bottom: -602px;
+    color: #999999;
+    font-size: 14px;
+    left: 0;
+}
+
+.zoomBottom s {
+    float: right;
+    margin-left: 186px;
+}
+
+.zoomRycc {
+    display: none;
+    position: absolute;
+    top: 167px;
+    right: 167px;
+    width: 12px;
+    height: 12px;
+    z-index: 300;
+    height: 12px;
+    background: transparent;
+}
+
+/* 第七行 买二免一 */
+.activity {
+    margin-top: 130px;
+}
+
+.activityL {
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+}
+
+.activityL a {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.activityR {
+    float: left;
+    width: 83%;
+
+}
+
+.act-com ul {
+    border: 1px solid #dfdfdf;
+    width: 788px;
+}
+
+.act-com li {
+    position: relative;
+    float: left;
+    padding: 17px 0;
+}
+
+.act-com li a {
+    color: #333333;
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+.act-com li i {
+    position: absolute;
+    top: -7px;
+    left: 44%;
+    color: #ff0036;
+}
+
+.act-com li s {
+    margin-left: 5px;
+    color: #3355aa;
+}
+
+.act-com li.bordercol {
+    border-left: 1px solid #cfbfb1;
+    border-right: 1px solid #cfbfb1;
+    border-top: 2px solid #ff0036;
+}
+
+.act-com li i.hides {
+    display: none;
+}
+
+/* 3 */
+.imgjh {
+    margin-top: 40px;
+}
+
+.imgjh img {
+    float: left;
+}
+
+/* 4 */
+.jiageshuom {
+    width: 790px;
+    margin-top: 20px;
+}
+
+.jiageshuom img {
+    width: 100%;
+}
+
+/* 5 */
+.evaluate {
+    margin-top: 4px;
+    width: 790px;
+}
+
+.evaluate p {
+    background: #ff0036;
+    color: #fff;
+    padding: 8px 0 8px 18px;
+}
+
+.wjiaox {
+    float: left;
+    margin: 12px 22px;
+    border-right: 1px dotted #ddd;
+    padding-right: 30px;
+}
+
+.evaluateB {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+}
+
+.wjiaox s {
+    color: #404040;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.wjiaox em {
+    color: #f60;
+    font-family: arial;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+.wjiaox .xsj {
+    display: block;
+    width: 60px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/quality/wujiaox.png) no-repeat 0 -15px;
+}
+
+.smell {
+    position: relative;
+    float: left;
+    height: 70px;
+}
+
+.smell .kuohao {
+    float: left;
+    font-size: 11px;
+    line-height: 12px;
+    width: 12px;
+    margin-top: 14px;
+    color: #ccc;
+    margin-right: 26px;
+}
+
+.smell a {
+    float: left;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-top: 16px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 1px #f2f2f2;
+}
+
+.kuohaobj {
+    position: absolute;
+    background-image: url(../images/quality/kuohao.png);
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 11px;
+    top: 18px;
+    left: 15px;
+}
+
+.smell .smell1 {
+    border: 1px solid #ffdde2;
+    color: #ff2453;
+}
+
+.smell .smell2 {
+    border: 1px solid #daf5e8;
+    color: #419280;
+}
+
+.smell .smell1:hover {
+    background: #ffe2e2;
+    border-color: #ff0036;
+    color: #ff0036;
+}
+
+.smell .smell2:hover {
+    background: #d9f5ed;
+    border-color: #409280;
+}

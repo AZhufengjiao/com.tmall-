@@ -173,12 +173,23 @@ $(function () {
         }
     )
 
+
+    // bug处
     $(".zoomR h2 s").on("click", function () {
         $(".zoomDB").show()
+        $(".zoomRycc").show()
     })
 
-    $(".zoomDB .chahao").on("click", function () {
+    $(".zoomRycc").on("click", function () {
         $(".zoomDB").hide()
-        console.log(1)
     })
+
+    // 第七行 买二免一
+    $(".act-com li").on("click", function () {
+        $(".act-com li i").hide()
+        $(this).find("i").show()
+        $(this).addClass("bordercol").siblings("li").removeClass("bordercol")
+    })
+
+
 })
