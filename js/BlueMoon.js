@@ -191,5 +191,35 @@ $(function () {
         $(this).addClass("bordercol").siblings("li").removeClass("bordercol")
     })
 
+    $(".smell a").on("click", function () {
+        $(".smell a").find("i").hide()
+        $(this).find("i").show().siblings("i").hide()
+    })
 
+    $(".evaluateB-zhui input[type=radio]").on("click", function () {
+        $(this).prop("checked", true).siblings("input[type=radio]").prop("checked", false)
+    })
+
+    $(".evaluateB-zhui-R span").hover(
+        function () {
+            $(this).find("ul").show()
+        },
+        function () {
+            $(this).find("ul").hide()
+        }
+    )
+
+    $(".evaluateB-zhui-R ul").on("click", "li", function () {
+        let num = $(this).html()
+        $(".evaluateB-zhui-R span ul li").html(num).remove()
+        $(".evaluateB-zhui-R span b").html(num)
+
+    })
+
+    //8
+    $(".grade li").hover(
+        function () {
+            $(this).addClass("tlan").siblings("li").removeClass("tlan")
+        }
+    )
 })

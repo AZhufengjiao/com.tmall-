@@ -1453,13 +1453,32 @@ header a img {
 }
 
 .smell .smell1 {
+    position: relative;
     border: 1px solid #ffdde2;
     color: #ff2453;
 }
 
+.smell1 i,
+.smell2 i {
+    display: none;
+    position: absolute;
+    bottom: -6px;
+    right: -5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-position: -1px -1px;
+    background-image: url(../images/quality/qren.png);
+}
+
 .smell .smell2 {
+    position: relative;
     border: 1px solid #daf5e8;
     color: #419280;
+}
+
+.smell i {
+    display: none;
 }
 
 .smell .smell1:hover {
@@ -1471,4 +1490,272 @@ header a img {
 .smell .smell2:hover {
     background: #d9f5ed;
     border-color: #409280;
+}
+
+.evaluateB-zhui {
+    padding: 8px 10px;
+    background: #efefef;
+    border: 1px solid #dbdbdb;
+}
+
+.evaluateB-zhui input {
+    vertical-align: middle;
+}
+
+.evaluateB-zhui label {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.evaluateB-zhui-R {
+    float: right;
+}
+
+
+.evaluateB-zhui-R span {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dadada;
+    padding: 3px 30px 3px 16px;
+}
+
+.evaluateB-zhui-R span b {
+    color: #404040;
+}
+
+.evaluateB-zhui-R span ul {
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 20px;
+    left: -1px;
+    border: 1px solid #dddddd;
+}
+
+.evaluateB-zhui-R span ul li {
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.evaluateB-zhui-R span i {
+    position: absolute;
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 12px;
+    right: 10px;
+    color: #131313;
+    top: 2px;
+}
+
+/* 6 */
+.comarea {
+    width: 790px;
+}
+
+.comarea li {
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+    float: left;
+    width: 100%;
+    padding: 20px 20px 25px 4px;
+    box-sizing: border-box;
+}
+
+.comareaL {
+    float: left;
+}
+
+.comareaL span {
+    display: block;
+    width: 644px;
+    height: 32px;
+    color: #3a3a3a;
+    font-size: 13px;
+}
+
+.comareaL s {
+    position: absolute;
+    bottom: 10px;
+    color: #cfcfcf;
+}
+
+
+
+.comareaL .xmimg img {
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    padding: 1px;
+    margin-right: 10px;
+    border: 1px solid #f2f2f2;
+}
+
+.comareaR {
+    float: right;
+    margin-right: 20px;
+    margin-top: 55px;
+}
+
+.comareaR span {
+    color: #454341;
+}
+
+.comareaR em {
+    color: #c3965d;
+    font-weight: 500;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.comareaR b {
+    color: #9e9e9d;
+    font-weight: 500;
+}
+
+/* 7 */
+.next {
+    position: relative;
+    width: 790px;
+    padding: 40px 0 10px;
+    text-align: right;
+    background-image: url(../images/quality/heimao.png);
+    background-repeat: no-repeat;
+    background-position: right 8px;
+}
+
+.next span {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0 1px 1px;
+}
+
+.next span.dian {
+    border-width: 0;
+}
+
+.next a {
+    display: inline;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    color: #2953a6;
+    /* border-width: 1px 0 1px 1px; */
+}
+
+.next a:hover {
+    text-decoration: underline;
+}
+
+/* 8 */
+.try {
+    width: 790px;
+}
+
+.try h1 {
+    font-size: 17px;
+    color: #000;
+    padding-left: 7px;
+    border-left: 5px solid #af874d;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tryT {
+    background: #ff0d40;
+    color: #fff;
+    padding: 10px;
+}
+
+.mean {
+    padding: 20px 0 0 10px;
+}
+
+.mean li {
+    float: left;
+    background-color: #f6f9ff;
+    padding: 10px;
+    width: 43%;
+    margin: 0 10px 10px 0;
+}
+
+.mean li a {
+    display: inline-block;
+    color: #3355aa;
+}
+
+.mean li s {
+    color: #ff6648;
+}
+
+.mean li b {
+    color: #666666;
+    font-weight: 500;
+}
+
+.try h2 {
+    color: #404040;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.try h2 em {
+    color: #404040;
+    font-weight: 400;
+}
+
+.grade {
+    margin: 10px 0 0 0;
+}
+
+.grade li {
+    position: relative;
+    background-position: 213px 17px;
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.gradeImg {
+    position: absolute;
+    top: 4px;
+    left: 150px;
+    width: 192px;
+    text-align: right;
+    padding: 0 10px 0 0;
+    line-height: 24px;
+    height: 24px;
+    background-image: url(../images/quality/pfen.png);
+    background-repeat: no-repeat;
+    background-size: 190px 71px;
+    box-sizing: border-box;
+}
+
+.grade li span {
+    color: #666666;
+    font-weight: 600;
+}
+
+.grade li em {
+    color: #ff6600;
+    font-size: 14px;
+}
+
+.grade li strong {
+    color: #fff;
+}
+
+.grade li.tlan {
+    background: #e5f2ff;
+}
+
+.gradeBox {
+    position: absolute;
+    top: 0;
+    width: 390px;
+    padding: 0 0 0 10px;
+    height: 111px;
+    right: 0;
+    background: #e5f2ff;
+    box-sizing: border-box;
+    z-index: 10;
 }
