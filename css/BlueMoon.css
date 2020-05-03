@@ -1751,11 +1751,180 @@ header a img {
 .gradeBox {
     position: absolute;
     top: 0;
-    width: 390px;
+    width: 380px;
     padding: 0 0 0 10px;
     height: 111px;
     right: 0;
     background: #e5f2ff;
     box-sizing: border-box;
     z-index: 10;
+}
+
+.gradeBox p {}
+
+.gradeBox p em {
+    color: #404040;
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.gradeBox p span {
+    color: #404040;
+    font-weight: 500;
+}
+
+.gradeBox h5 {
+    color: #808080;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+
+.gradeBox h5 span {
+    color: #ff6600;
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+.gradeBox h5 s {
+    display: inline-block;
+    background: #ffc41c;
+    width: 100px;
+    height: 9px;
+    margin: 0px 5px;
+}
+
+.gradeBox h5 b {
+    color: #ff6600;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.gradeBox h5:nth-child(3) s {
+    width: 2px;
+}
+
+.gradeBox h5:nth-child(4) s {
+    width: 1px;
+}
+
+.gradeBox h5:nth-child(5) s {
+    width: 0px;
+}
+
+.gradeBox h5:nth-child(6) s {
+    width: 1px;
+}
+
+.box2 {
+    display: none;
+    top: -40px;
+}
+
+.box3 {
+    top: -80px;
+    display: none;
+}
+
+/* 9 */
+.saleh {
+    margin-top: 40px;
+    width: 790px;
+}
+
+.saleh h1 {
+    background: #ff0036;
+    color: #fff;
+    padding: 8px 10px;
+    font-weight: 500;
+}
+
+.saleh li {
+    float: left;
+    width: 33.3333%;
+    border: 1px solid #e5e5e7;
+    border-width: 1px 0 1px 1px;
+    box-sizing: border-box;
+}
+
+.saleh li:last-child {
+    border-right: 1px solid #e5e5e7;
+}
+
+.salehL {
+    float: left;
+    padding: 30px 20px 60px 20px;
+}
+
+.salehL s {
+    display: block;
+    width: 36px;
+    height: 30px;
+    margin-left: 12px;
+    margin-bottom: 4px;
+    background-image: url(../images/quality/shouh.png);
+}
+
+.salehR {
+    float: left;
+    width: 173px;
+}
+
+.salehR p {
+    margin-top: 30px;
+    line-height: 2;
+    padding: 0 17px;
+    border-left: 1px solid #e6e6e6;
+}
+
+.saleh li:nth-child(2) s {
+    background-position: -36px 0;
+}
+
+/* 10 */
+.promise {
+    width: 790px;
+    margin-top: 30px;
+    border: 1px solid #e5e5e7;
+    margin-bottom: 20px;
+}
+
+.promise p {
+    color: #940000;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin: 30px 20px 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e5e5e7;
+}
+
+.promise ol {
+    padding: 0 40px;
+    margin-bottom: 50px;
+}
+
+.promise ol li {
+    margin-bottom: 10px;
+}
+
+.promise img {
+    display: block;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+.promise ul {
+    padding: 30px 50px;
+}
+
+.promise ul h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.promise ul li {
+    list-style-type: disc;
+    line-height: 2;
 }

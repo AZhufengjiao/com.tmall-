@@ -220,6 +220,8 @@ $(function () {
     $(".grade li").hover(
         function () {
             $(this).addClass("tlan").siblings("li").removeClass("tlan")
+            $(".grade li").find(".gradeBox").hide()
+            $(this).find(".gradeBox").show()
         }
     )
 })
