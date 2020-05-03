@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 100000px;
+    height: 15739px;
 }
 
 #exzoom {
@@ -17,7 +17,7 @@ html {
 }
 
 .shade {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 0;
     left: 0;
@@ -31,7 +31,7 @@ html {
 
 /* 遮罩层 下的盒子 */
 .shadeDiv {
-    display: none;
+    /* display: none; */
     position: absolute;
     width: 420px;
     background-color: #fff;
@@ -735,6 +735,8 @@ header a img {
     position: absolute;
     background: #fff;
     width: 232px;
+    top: 254px;
+    z-index: 300;
 }
 
 .sup-slideshow-left ul {
@@ -1927,4 +1929,219 @@ header a img {
 .promise ul li {
     list-style-type: disc;
     line-height: 2;
+}
+
+/* 11 */
+.safety {
+    width: 790px;
+}
+
+.safety ul {
+    border: 1px solid #ffcc7f;
+    padding: 0 11px;
+    background: #ffffe5;
+}
+
+.safety li span {
+    float: left;
+    color: #404040;
+    font-weight: 600;
+}
+
+.safety li {
+    border-bottom: 1px solid #ffe8ca;
+    padding-bottom: 12px;
+    margin-top: 12px;
+}
+
+.safety li:last-child {
+    border-bottom: none;
+}
+
+.safety p {
+    float: left;
+    width: 92%;
+    margin-left: 10px;
+    line-height: 1.8;
+}
+
+.safety a {
+    color: #3355aa;
+}
+
+.safety a:hover {
+    text-decoration: underline;
+}
+
+.safety h3 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.safety h3 em {
+    font-weight: 500;
+}
+
+.safety h3 a {
+    display: inline-block;
+    padding-left: 18px;
+    line-height: 17px;
+    background-repeat: no-repeat;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #999999;
+}
+
+.safety h3 a:nth-child(2) {
+    background-image: url(../images/quality/qiand1.png);
+}
+
+.safety h3 a:nth-child(3) {
+    background-image: url(../images/quality/qiand2.png);
+}
+
+.safety h3 a:hover {
+    text-decoration: none;
+}
+
+/* 第27行 支付方式 */
+.tmall-payment {
+    border-top: 1px solid #d1d7dc;
+    border-bottom: 1px solid #ff0036;
+}
+
+.tmall-payment .container {
+    position: relative;
+    height: 213px;
+    padding-top: 30px;
+    overflow: hidden;
+    padding-left: 180px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.tmall-payment dl {
+    float: left;
+    width: 180px;
+    height: 90px;
+    padding-left: 38px;
+}
+
+.tmall-payment dl dt a {
+    font-size: 16px;
+    color: #646464;
+    font-weight: 600;
+}
+
+.tmall-payment dl dd a {
+    color: #8b8b8b;
+    font-weight: 500;
+}
+
+.tmall-payment dl dt {
+    height: 30px;
+}
+
+.tmall-payment dl dd {
+    line-height: 20px;
+}
+
+/* 右二维码 */
+.tmall-payment-right a,
+.tmall-payment-right a img {
+    width: 105px;
+    height: 105px;
+}
+
+.tmall-payment-right span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #646464;
+    font-weight: 600;
+}
+
+.tmall-black-mat {
+    position: absolute;
+    width: 68px;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/tamll/tmall-black-mao.jpg);
+}
+
+.tmall-payment-left-top {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 120px;
+    height: 40px;
+}
+
+/* 第28行 底部 */
+footer {
+    position: relative;
+    padding-top: 8px;
+    background-color: #c40000;
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+footer h1 a {
+    color: #fff;
+}
+
+footer h2,
+footer h3 {
+    line-height: 2;
+    font-weight: 500;
+
+}
+
+footer h2 a {
+    color: #fff;
+}
+
+footer h3 {
+    line-height: 3
+}
+
+footer h3 a {
+    color: #a4a4a4;
+}
+
+footer p a {
+    color: #a4a4a4;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer h1 {
+    color: #686868;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.tooter-img-0 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.tooter-img-0 img {
+    width: 30px;
+    height: 30px;
+}
+
+.tooter-img-1 {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
 }

@@ -1,9 +1,9 @@
 $(function () {
     // 点击关闭 遮罩层消失
-    // $(".shadeDiv").on("click", "s", function () {
-    //     $(".shadeDiv").hide()
-    //     $(".shade").hide()
-    // })
+    $(".shadeDiv").on("click", "s", function () {
+        $(".shadeDiv").hide()
+        $(".shade").hide()
+    })
 
     // 首部导航栏经过，隐藏部分显示
     $(".Tmall-nav-right-ul li").hover(
@@ -125,6 +125,7 @@ $(function () {
         }
     )
 
+
     // 放大镜
     $("#exzoom").exzoom({
         autoPlay: false,
@@ -224,4 +225,61 @@ $(function () {
             $(this).find(".gradeBox").show()
         }
     )
+
+    // 左边经过显示
+    $(".sup-classify h3").hover(
+        function () {
+            $(".sup-slideshow-left").show()
+            $(".sup-slideshow-left").hover(
+                function () {
+                    $(".sup-slideshow-left").show()
+                },
+                function () {
+                    $(".sup-slideshow-left").hide()
+                }
+            )
+        },
+        function () {
+            $(".sup-slideshow-left").hide()
+        }
+    )
+
+    // 给页面添加卷曲事件
+    let sc = $(".sup-classify").offset().top
+    $(document).on("scroll", function () {
+        let thistop = $(this).scrollTop()
+
+        if (thistop > sc) {
+            $('.sup-classify').css({
+                "position": "fixed",
+                "top": 0,
+                "border-bottom": "1px solid #2f2f2f"
+            })
+            $('.sup-classify').on("mouseenter", function () {
+                $(".sup-slideshow-left").css({
+                    "position": "fixed",
+                    "top": 38,
+                    "z-index": 200
+                })
+            })
+            $('.sup-classify').on("mouseleave", function () {
+                $(".sup-slideshow-left").show()
+            })
+            $(".sup-slideshow-left").on("mouseleave", function () {
+                $(this).css({
+                    "position": "static"
+                })
+            })
+        }
+
+        if (thistop < sc) {
+            $('.sup-classify').css({
+                "position": "static",
+                "border-bottom": 0
+            })
+        }
+
+    })
+
+
 })
