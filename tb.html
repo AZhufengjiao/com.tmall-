@@ -4562,4 +4562,17 @@
     <!-- lunbo -->
     <script src="./lib/lunbo/picture-carousel.min.js"></script>
     <script src="./js/lunboTop.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>

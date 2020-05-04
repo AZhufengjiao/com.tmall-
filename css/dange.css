@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none outside none;
+}
+
+body {
+	font-family: "宋体";
+	padding: 50px 0 0;
+}
+
+
+/* .silder-box{width:600px;height:400px;margin:0 auto 0;position:relative;}
+.silder{position:relative;overflow:hidden;width:400px;height:400px;margin:0 auto 0;}
+.silder li{width:400px;height:400px;} */
+.silder-box {
+	position: relative;
+	margin: 50px auto;
+}
+
+.silder {
+	margin: 0 auto 0;
+}
+
+.silder li {
+	width: 250px;
+	height: 300px;
+}
+
+.silder li img {
+	width: 100%;
+	height: 100%;
+}
+
+.silder-button {
+	top: 125px;
+	width: 25px;
+	height: 54px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.silder-button.btl {
+	left: 1px;
+	background: url(../images/Ali/bl.png);
+}
+
+.silder-button.btr {
+	right: 10px;
+	background: url(../images/Ali/br.png);
+}
+
+.silder-box-1 {
+	width: 1400px;
+}
+
+.silder-box-2 {
+	width: 500px;
+}
+
+.silder-box-2 .silder li {
+	width: 200px;
+	height: 200px;
+}
+
+.silder-box-3 {
+	width: 1000px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #333;
+}
+
+p span {
+	color: #CB0000;
+}
+
+h1 {
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	color: #333;
+}
+
+h1 em {
+	font-size: 30px;
+	color: #CB0000;
+	padding: 0 10px;
+}
+
+textarea {
+	display: block;
+	text-indent: 0;
+	width: 500px;
+	margin: 0 auto 20px;
+	background: #ccc;
+	border: 0 none;
+	resize: ;
+	font-size: 12px;
+	min-height: 120px;
+}
+
+textarea.t1 {
+	height: 340px;
+	margin: 20px auto;
+}
+
+.small-navs {
+	position: absolute;
+}

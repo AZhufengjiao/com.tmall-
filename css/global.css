@@ -1,0 +1,404 @@
+/* 焦点图 */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: "微软雅黑", Helvetica;
+	overflow-x: hidden;
+}
+
+img {
+	border: none;
+}
+
+.slidest .slide .slide-left img {
+	width: 625px;
+	height: 500px;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.example-slide {
+	width: 1331px;
+	height: 798px;
+	position: relative;
+	margin-left: 59px;
+
+}
+
+.example-slide .slidest {
+	position: absolute;
+	z-index: 100;
+	width: 1300px;
+	margin-top: 80px;
+	padding: 30px 30px 30px 40px;
+	box-sizing: border-box;
+}
+
+.slidest .slides_container .slide-all {
+	float: left;
+	width: 716px;
+}
+
+
+.slides_container .slide-all a {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+.slides_container .slide-all a img {
+	width: 100%;
+}
+
+.slidest .caption {
+	z-index: 500;
+	position: absolute;
+	left: 0;
+	background: url(../images/whitebg.png) repeat;
+	color: #fff;
+	bottom: 0;
+	height: 38px;
+	width: 100%;
+	_height: 58px;
+}
+
+.slidest .caption p {
+	height: 38px;
+	line-height: 38px;
+	padding-left: 10px;
+}
+
+.slidest .slides_container .slide-left {
+	float: left;
+	width: 344px;
+}
+
+.slidest .slides_container .slide-right {
+	float: right;
+	position: relative;
+	width: 662px;
+	padding-left: 20px;
+	text-align: left;
+	_padding-left: 10px;
+}
+
+.slides_container .slide-left img {
+	width: 344px;
+	display: block;
+	overflow: hidden;
+}
+
+.slidest .slides_container {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+
+.slidest .slides_container .slide {
+	width: 1300px;
+	height: 500px;
+	display: block;
+}
+
+.slidest .prev {
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background: url(../images/topicarrow.png) 0px 0px;
+	top: 85px;
+	width: 40px;
+	height: 60px;
+	*left: 0px;
+}
+
+.slidest .next {
+	right: 0px;
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background: url(../images/topicarrow.png) 40px 0px;
+	top: 85px;
+	width: 40px;
+	height: 60px;
+}
+
+.slidest a.next:hover {
+	background: url(../images/topicarrow_hover.png) 40px 0px;
+}
+
+.slidest a.prev:hover {
+	background: url(../images/topicarrow_hover.png) 0px 0px;
+}
+
+.slidest .pagination {
+	margin-left: 290px;
+	padding-left: 60px\9;
+	position: absolute;
+	height: 4px;
+	top: -13px;
+	width: 117%;
+	left: -294px;
+	padding: 10px 0;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.slidest .pagination li {
+	width: 100px;
+	float: left;
+	height: 7px;
+	top: 3px;
+	margin: 0 2px;
+	list-style: none;
+	margin-right: 190px;
+}
+
+.slidest .pagination li a {
+	position: absolute;
+	display: none;
+	height: 0;
+	top: -38px;
+	left: 0;
+	padding-top: 4px;
+	display: inline-block;
+	width: 96px;
+	color: transparent;
+	height: 35px;
+	margin-top: 10px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.slidest .pagination li.current a {
+	background-color: #2498ff;
+	width: 50px;
+}
+
+.slidest:hover a.prev {
+	background: url(../images/topicarrow_hover.png) 0px 0px;
+}
+
+.slidest:hover a.next {
+	background: url(../images/topicarrow_hover.png) 40px 0px;
+}
+
+/*右边文字*/
+.slide-right .hotinfo-tit {
+	text-align: left;
+	padding: 10px 5px;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 30px;
+	font-family: 微软雅黑;
+	font-style: normal;
+}
+
+.slide-right .hotinfo-desc {
+	font-size: 12px;
+	line-height: 15px;
+	margin-top: 10px;
+}
+
+.slide-right .hotinfo-item {
+	font-size: 12px;
+	padding: 10px 0;
+	position: relative;
+	margin-top: 10px;
+}
+
+.slide-right .hotinfo-item img {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	margin-right: 10px;
+	vertical-align: middle;
+	overflow: visible;
+}
+
+.slide-right .p-color,
+.p-color:hover,
+.p-color a,
+.p-color a:hover {
+	color: #2498fd;
+}
+
+.left {
+	float: left;
+}
+
+.slide-right .hotinfo-item .hotinfo-link {
+	position: absolute;
+	width: 90px;
+	height: 34px;
+	top: 10px;
+	right: 0;
+}
+
+.slide-right .author {
+	padding-bottom: 3px;
+}
+
+.slide-right .author p a {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.slide-right .hotinfo-link .button {
+	padding: 8px 20px;
+	font-size: 12px;
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: normal;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	background-color: #2498fd;
+	border-color: #2498fd;
+	color: #ffffff;
+}
+
+.slide-right img.doublearrow {
+	height: 12px;
+	width: 12px;
+	position: absolute;
+	margin-top: 3px;
+}
+
+.slide-right h2 {
+	color: #1a1a1a;
+	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.use .slide-right p {
+	font-weight: 500;
+	line-height: 2;
+	margin-top: 22px;
+	padding-right: 50px;
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 14px;
+	color: #999999;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.use .slide-right span {
+	margin: 0;
+	color: #333333;
+	font-size: 15px;
+}
+
+.use .slide-right h5 {
+	line-height: 2.2;
+	color: #999999;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.shab {
+	display: none;
+}
+
+.pagination li:nth-child(1)::after {
+	content: " 新零售";
+	position: absolute;
+	display: block;
+	top: -12px;
+	left: 0;
+}
+
+.pagination li {
+	position: relative;
+}
+
+.slidest .pagination li:nth-child(1) {
+	margin-left: 100px;
+}
+
+.pagination li:nth-child(1)::after {
+	content: " 新零售";
+	position: absolute;
+	display: block;
+	top: -23px;
+	left: 1px;
+	width: 100px;
+}
+
+.pagination li:nth-child(2)::after {
+	content: " 传媒/多媒体";
+	position: absolute;
+	display: block;
+	top: -23px;
+	left: 1px;
+	width: 100px;
+}
+
+.pagination li:nth-child(3)::after {
+	content: " 泛娱乐";
+	position: absolute;
+	display: block;
+	top: -23px;
+	left: 1px;
+	width: 100px;
+}
+
+.pagination li:nth-child(4)::after {
+	content: " 只能安防";
+	position: absolute;
+	display: block;
+	top: -23px;
+	left: 1px;
+	width: 100px;
+}
+
+.slidest .pagination li:nth-child(1) {
+	margin-left: 80px;
+}
+
+.pagination li:hover {
+	border-bottom: 3px solid #3b6efb;
+}
