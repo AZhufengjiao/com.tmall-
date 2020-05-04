@@ -1,0 +1,136 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+/* 首部导航 */
+header {
+    width: 100%;
+    position: absolute;
+    background: #fff;
+}
+
+header img {
+    float: left;
+    height: 42px;
+    cursor: pointer;
+    margin-left: 94px;
+    margin-top: 6px;
+}
+
+header ul {
+    float: right;
+    margin-right: 108px;
+}
+
+header ul li {
+    position: relative;
+    float: left;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #000000;
+    padding: 20px 23px;
+}
+
+header ul li a:hover {
+    color: #1370fb;
+    border-bottom: 2px solid #1370fb;
+}
+
+.dbuhide {
+    display: none;
+    position: absolute;
+    width: 1920px;
+    top: 55px;
+    left: -997px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 2px solid #f7f7f7;
+    z-index: 10;
+}
+
+.dbuhide2 {
+    left: -1006px;
+}
+
+.dbuhide div {
+    width: 420px;
+    margin: auto;
+}
+
+.dbuhide2 div {
+    margin-left: 873px;
+}
+
+.hide {
+    display: none;
+}
+
+header ul li .dbuhide a {
+    float: left;
+    padding: 35px 45px;
+}
+
+.dbuhide i {
+    display: block;
+    text-align: center;
+    padding: 0 0 17px;
+}
+
+.dbuhide a:hover {
+    border-bottom: none;
+}
+
+.dbuhide a:hover i {
+    color: #1370fb;
+}
+
+header ul li:hover .dbuhide {
+    display: block;
+}
+
+.dbuhide1 div {
+    width: 780px;
+}
+
+
+/* 2 */
+.Greennet {
+    padding: 60px 0;
+    background-image: url(../images/Ali/lvwangbj.jpg);
+}
+
+.Greennet .container {
+    padding: 30px 30px 1px 96px;
+    box-sizing: border-box;
+}
+
+.Greennet h3 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.8;
+}
+
+.Greennet p {
+    width: 530px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.Greennet a {
+    display: inline-block;
+    color: #3a6dfb;
+    padding: 7px 30px;
+    border: 1px solid;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
