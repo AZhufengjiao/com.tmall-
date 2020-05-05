@@ -238,15 +238,30 @@ $(function () {
 
     // 鼠标结果天猫首页左边tab栏显示对应的介绍
     $(".Tmall-slideshow-left-nav-ul").on("mouseenter", 'li', function () {
-        let index = $(this).index()
+        var index = $(this).index()
         $(".Tmall-slideshow-hide").show()
         $(".Tmall-slideshow-hide-box").eq(index).show()
+
+        $(".Tmall-slideshow-hide").hover(
+            function () {
+                $(this).show()
+                $(".Tmall-slideshow-hide-box").eq(index).show().siblings().hide()
+            },
+            function () {
+                $(this).hide()
+                $(".Tmall-slideshow-hide-box").hide()
+            }
+        )
     })
+
+
     $(".Tmall-slideshow-left-nav-ul").on("mouseleave", 'li', function () {
         // let index = $(this).index()
         $(".Tmall-slideshow-hide").hide()
         $(".Tmall-slideshow-hide-box").hide()
     })
+
+
 
     // 经过第五行 品牌闪购 图片变淡
     $(".Tmall-brand-bottom").hover(

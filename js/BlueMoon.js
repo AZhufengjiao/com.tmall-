@@ -282,4 +282,21 @@ $(function () {
     })
 
 
+    // 完善第七行
+
+
+    $(".act-com li:nth-child(1)").on("click", function () {
+        $(".activity").find(".hideone").show()
+        $(".activity").find(".hidetwo").show()
+    })
+
+    $(".act-com li:nth-child(3)").on("click", function () {
+        $(".activity").find(".hideone").hide()
+        $(".activity").find(".hidetwo").hide()
+    })
+
+    $(".act-com li:nth-child(2)").on("click", function () {
+        $(".activity").find(".hidetwo").show()
+        $(".activity").find(".hideone").hide()
+    })
 })

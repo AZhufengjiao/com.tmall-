@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    height: 15739px;
+    height: 5139px;
 }
 
 #exzoom {
@@ -652,6 +652,7 @@ header a img {
     right: 0;
     width: 217px;
     height: 272px;
+    background: #fff;
     border: 3px solid #bf0000;
     border-top: 0;
     z-index: 10;
@@ -1352,8 +1353,8 @@ header a img {
 }
 
 /* 3 */
-.imgjh {
-    margin-top: 40px;
+.tab {
+    margin-bottom: 40px;
 }
 
 .imgjh img {
@@ -1651,6 +1652,7 @@ header a img {
 /* 8 */
 .try {
     width: 790px;
+    margin-bottom: 40px;
 }
 
 .try h1 {
@@ -1831,7 +1833,6 @@ header a img {
 
 /* 9 */
 .saleh {
-    margin-top: 40px;
     width: 790px;
 }
 

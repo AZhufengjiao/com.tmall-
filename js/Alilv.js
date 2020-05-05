@@ -1,11 +1,21 @@
 $(function () {
+
+
+    $(window).on("scroll", function () {
+        // let dotop = $(this).scrollTop()
+        console.log($(this).scrollTop())
+        // if ($(this).scrollTop > 1)
+    })
+
+
+
     // 第四行
     $(".advantage li").hover(
         function () {
             $(this).stop().animate({
                 "marginTop": "40px"
             }, 200)
-            $(this).find("p").height(34).siblings("p").height(15)
+            $(this).find("p").height(38).siblings("p").height(15)
         },
         function () {
             $(this).stop().animate({
@@ -13,6 +23,8 @@ $(function () {
             }, 200)
         }
     )
+
+
 
 
 

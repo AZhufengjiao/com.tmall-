@@ -40,6 +40,7 @@ header ul li a {
     display: inline-block;
     color: #000000;
     padding: 20px 23px;
+    font-size: 12px;
 }
 
 header ul li a:hover {
@@ -51,8 +52,8 @@ header ul li a:hover {
     display: none;
     position: absolute;
     width: 1920px;
-    top: 55px;
-    left: -997px;
+    top: 56px;
+    left: -940px;
     border-top: 1px solid #e3e3e3;
     border-bottom: 2px solid #f7f7f7;
     z-index: 10;
@@ -63,7 +64,7 @@ header ul li a:hover {
 }
 
 .dbuhide div {
-    width: 420px;
+    width: 440px;
     margin: auto;
 }
 
@@ -78,6 +79,7 @@ header ul li a:hover {
 header ul li .dbuhide a {
     float: left;
     padding: 35px 45px;
+    font-size: 12px;
 }
 
 .dbuhide i {
@@ -99,7 +101,7 @@ header ul li:hover .dbuhide {
 }
 
 .dbuhide1 div {
-    width: 855px;
+    width: 900px;
 }
 
 
@@ -328,12 +330,13 @@ header ul li:hover .dbuhide {
 
 /* 底部 */
 footer {
+    height: 360px;
     width: 100%;
     background: #001228;
 }
 
 footer .container {
-    padding: 74px 77px;
+    padding: 74px 100px;
     color: #4a4a4a;
     box-sizing: border-box;
 }
@@ -345,8 +348,9 @@ footer img {
 }
 
 footer dl {
-    width: 162px;
+    width: 220px;
     float: left;
+    height: 160px;
 }
 
 footer dt {
@@ -367,10 +371,34 @@ footer dd a {
     color: #555f6f;
 }
 
-footer dl:nth-child(1) {
-    margin-left: 30px;
+footer dl:nth-child(2) {
+    margin-left: 40px;
+    border-left: 1px solid #4a4a4a;
+    padding-left: 40px;
 }
 
-.aliewm span {}
+.aliewm {
+    float: left;
+}
 
-.aliewm img {}
+.aliewm span {
+    display: inline-block;
+    color: #fff;
+    width: 112px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    float: left;
+    width: 100%;
+    padding: 20px 0 0 0;
+    color: #28374c;
+    margin-top: 80px;
+    border-top: 1px solid #4a4a4a;
+}
+
+footer dd a:hover {
+    color: #fff;
+}
